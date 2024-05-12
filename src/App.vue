@@ -27,17 +27,6 @@
       <div id="circle1"></div>
       <div id="circle2"></div>
       <div id="circle3"></div>
-      <div class="mainBanner__titler">
-        <div class="mainBanner__title">Проблемы с Вашим устройством?</div>
-        <div class="mainBanner__subtitle">Решаем любые проблемы!<br>Большой склад и опытные мастера</div>
-        <div class="mainBanner__button">Бесплатная консультация</div>
-      </div>
-      <div class="mainBanner__elements">
-        <img src="./assets/images/wave.svg" alt="waves" class="mainBanner__elements-waves">
-        <img src="./assets/images/five-arrows.svg" alt="arrow" class="mainBanner__elements-arrow">
-        <img src="./assets/images/ellipse.svg" alt="ellipse" class="mainBanner__elements-ellipse">
-        <img src="./assets/images/dots.svg" alt="dots" class="mainBanner__elements-dots">
-      </div>
       <div class="mainBanner__master">        
         <div class="mainBanner__master-monitor">
           <img src="./assets/images/circle3.svg" alt="monitor">
@@ -56,6 +45,17 @@
           <div class="mainBanner__master-circle1"></div>
           <img src="./assets/images/master2.png" alt="master image">
         </div>
+      </div>
+      <div class="mainBanner__title">
+        <div class="mainBanner__name">Проблемы с Вашим устройством?</div>
+        <div class="mainBanner__subtitle">Решаем любые проблемы!<br>Большой склад и опытные мастера</div>
+        <div class="mainBanner__button">Бесплатная консультация</div>
+      </div>
+      <div class="mainBanner__elements">
+        <img src="./assets/images/wave.svg" alt="waves" class="mainBanner__elements-waves">
+        <img src="./assets/images/five-arrows.svg" alt="arrow" class="mainBanner__elements-arrow">
+        <img src="./assets/images/ellipse.svg" alt="ellipse" class="mainBanner__elements-ellipse">
+        <img src="./assets/images/dots.svg" alt="dots" class="mainBanner__elements-dots">
       </div>
       <div class="mainBanner__action">
         <div class="mainBanner__discount">
@@ -217,9 +217,9 @@ export default {
     margin-left: 74px;
     margin-right: 58px;
     height: 1118px;
-    &__titler {
+    &__title {
       width: 635px;
-      height: 300px;
+      // height: 300px;
       position: absolute;
       // width: 625px;
       // height: 492px;
@@ -228,8 +228,8 @@ export default {
       top: 390.29px;
       bottom: 235.83px;
     }
-    &__title {
-      @include textDecoration("Bebas Neue", 700, 110px, 100px, calc(1em * -0.01));
+    &__name {
+      @include textDecoration("Bebas Neue", 700, 100px, 100px, calc(1em * -0.08));
       color: $mainTextColor;
     }
     &__subtitle {
@@ -267,7 +267,6 @@ export default {
       height: 309px;
       background-color: white;
       border-radius: 30px;
-      // padding-top: -38px;
       padding-left: 30px;
       padding-right: 30px;
     }
@@ -288,7 +287,7 @@ export default {
       }
     }
     &__content {
-      @include textDecoration(Gilroy, 400, 20px, 26px);
+      @include textDecoration(Gilroy, 400, 18px, 26px);
        color: $mainTextColor;
     }
     &__line {
@@ -342,8 +341,6 @@ export default {
         right: 52.11%;
         top: 70.23%;
         bottom: 27.55%;
-        // color: black;
-        // opacity: 0.1;
       }
       &-dots {
         position: absolute;
@@ -373,7 +370,7 @@ export default {
       top: 185.29px;
       bottom: 81.56px;
       &-image {
-        position: absolute;
+        // position: absolute;
         // width: 765px;
         // height: 851.27px;
         // left: 839.16px;
@@ -491,8 +488,7 @@ export default {
       }
       &-content {
         @include textDecoration(Gilroy, 400, 18px, 24px);
-        color: $mainBannerSubtitleColor;
-        // opacity: 0.5;
+        color: $mainBannerSubtitleColor;        
       }
     }
 
@@ -515,7 +511,6 @@ export default {
     right: 7.62px;
     top: 96.29px;
     bottom: -34.17px;
-    border-radius: 500px;
     filter: blur(200px);
     background: radial-gradient(50.00% 50.00% at 50% 50%,rgb(255, 107, 0),rgba(255, 107, 0, 0) 100%);
     opacity: 0.2;
