@@ -1,0 +1,18 @@
+<svg width="56.000000" height="56.000000" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip1_107">
+			<rect id="mail" width="32.000000" height="32.000000" transform="translate(12.000000 12.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g opacity="0.100000">
+		<path id="Ellipse 135" d="M51.27 43.56C50.55 44.62 49.77 45.64 48.92 46.59C44.19 51.93 37.86 55.02 31.28 55.79C24.2 56.64 17.42 54.75 11.99 50.96C6.13 46.89 2.32 40.97 0.77 34.53C-0.9 27.59 0.18 20.63 3.31 14.79C3.92 13.65 4.6 12.56 5.34 11.54C10.68 4.16 20.86 8.66 24.02 17.21C26.41 23.69 32.58 28 39.49 28C48.61 28 56.34 35.99 51.27 43.56Z" fill="#005AAA" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+	<rect id="mail" width="32.000000" height="32.000000" transform="translate(12.000000 12.000000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip1_107)">
+		<path id="Vector" d="M17.33 17.33L38.66 17.33C40.13 17.33 41.33 18.53 41.33 20L41.33 36C41.33 37.46 40.13 38.66 38.66 38.66L17.33 38.66C15.86 38.66 14.66 37.46 14.66 36L14.66 20C14.66 18.53 15.86 17.33 17.33 17.33Z" fill="#005AAA" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M41.33 20L27.99 29.33L14.66 20" stroke="#FFD66B" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+	</g>
+</svg>
