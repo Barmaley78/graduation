@@ -28,6 +28,8 @@
       <div id="circle2"></div>
       <div id="circle3"></div>
       <div class="mainBanner__master">        
+        <div class="mainBanner__master-circle"></div>
+        <div class="mainBanner__master-circle1"></div>
         <div class="mainBanner__master-monitor">
           <img src="./assets/images/circle3.svg" alt="monitor">
         </div>
@@ -40,11 +42,8 @@
         <div class="mainBanner__master-laptop">
           <img src="./assets/images/circle2.svg" alt="laptop">
         </div>
-        <div class="mainBanner__master-image">
-          <div class="mainBanner__master-circle"></div>
-          <div class="mainBanner__master-circle1"></div>
-          <img src="./assets/images/master2.png" alt="master image">
-        </div>
+        <img src="./assets/images/master-vector.svg" alt="vector element" class="mainBanner__master-vector">
+        <img src="./assets/images/master2.png" alt="master image" class="mainBanner__master-image">
       </div>
       <div class="mainBanner__title">
         <div class="mainBanner__name">Проблемы с Вашим устройством?</div>
@@ -53,7 +52,7 @@
       </div>
       <div class="mainBanner__elements">
         <img src="./assets/images/wave.svg" alt="waves" class="mainBanner__elements-waves">
-        <img src="./assets/images/five-arrows.svg" alt="arrow" class="mainBanner__elements-arrow">
+        <img src="./assets/images/grey-arrows.svg" alt="arrow" class="mainBanner__elements-arrow">
         <img src="./assets/images/ellipse.svg" alt="ellipse" class="mainBanner__elements-ellipse">
         <img src="./assets/images/dots.svg" alt="dots" class="mainBanner__elements-dots">
       </div>
@@ -103,27 +102,91 @@
           <div class="mainBanner__advantages-content">Незначительные поломки - делаем бесплатно.</div>
         </div>
       </div>
-
-
     </section>
 
+    <section class="service center">
+      <div class="span-col">
+        <div class="service-circle"></div>
+        <div class="service__title">Мы работаем <br> с устройствами:</div>
+      </div>
+      <div class="service__item" id="apple">
+        <div class="service__item-rectangle"></div>
+        <img src="./assets/images/dots_45.svg" alt="dots" class="service__item-vector">
+        <img src="./assets/images/apple.png" alt="apple image" class="service__item-img">
+        <div class="service__item-logoCircle"></div>
+        <img src="./assets/images/apple-logo.svg" alt="apple logo image" class="service__item-logo">      
+        <div class="service__item-title">Apple</div>
+        <div class="arrow-circle2"></div>
+        <div class="arrow-circle1"></div>
+        <img src="./assets/images/chevron-right.svg" alt="arrow" class="service__item-arrow">
+      </div>
 
+      <div class="service__item" id="android">
+        <div class="service__item-rectangle"></div>
+        <img src="./assets/images/wave.svg" alt="waves" class="service__item-vector">
+        <img src="./assets/images/android.png" alt="android image" class="service__item-img">
+        <div class="service__item-logoCircle"></div>
+        <img src="./assets/images/android-logo.svg" alt="android logo image" class="service__item-logo">      
+        <div class="service__item-title">Android</div>
+        <div class="arrow-circle2"></div>
+        <div class="arrow-circle1"></div>
+        <img src="./assets/images/chevron-right.svg" alt="arrow" class="service__item-arrow">
+      </div>
 
-    <section class="sec1 center">Lorem ipsum dolor sit amet.</section>
-    <section class="sec1 center">Lorem ipsum dolor sit amet.</section>
-    <section class="sec1 center">Lorem ipsum dolor sit amet.</section>
+      <div class="service__item" id="gadgets">
+        <div class="service__item-rectangle"></div>
+        <img src="./assets/images/wave.svg" alt="waves" class="service__item-vector">
+        <img src="./assets/images/gadgets.png" alt="gadgets image" class="service__item-img">
+        <div class="service__item-title">Гаджетами</div>
+        <div class="arrow-circle2"></div>
+        <div class="arrow-circle1"></div>
+        <img src="./assets/images/chevron-right.svg" alt="arrow" class="service__item-arrow">
+      </div>
 
-    <footer class="footer center">Lorem, ipsum dolor.</footer>
+      <div class="service__item" id="laptop">
+        <div class="service__item-rectangle"></div>
+        <img src="./assets/images/triangle.svg" alt="triangle" class="service__item-vector">
+        <img src="./assets/images/laptop.png" alt="laptop image" class="service__item-img">
+        <div class="service__item-title">Ноутбуками</div>
+        <div class="arrow-circle2"></div>
+        <div class="arrow-circle1"></div>
+        <img src="./assets/images/chevron-right.svg" alt="arrow" class="service__item-arrow">
+      </div>
+
+      <div class="service__item" id="pc">
+        <div class="service__item-rectangle"></div>
+        <img src="./assets/images/yellow-arrows.svg" alt="yellow-arrows" class="service__item-vector">
+        <img src="./assets/images/pc.png" alt="pc image" class="service__item-img">
+        <div class="service__item-title">Моноблоками и РС</div>
+        <div class="arrow-circle2"></div>
+        <div class="arrow-circle1"></div>
+        <img src="./assets/images/chevron-right.svg" alt="arrow" class="service__item-arrow">
+      </div>
+      
+      <div class="service__item" id="devices">
+        <div class="service__item-rectangle"></div>
+        <img src="./assets/images/grey_triangle.svg" alt="grey_triangle" class="service__item-vector">
+        <img src="./assets/images/devices.png" alt="devices image" class="service__item-img">
+        <div class="service__item-title">Другими устройствами</div>
+        <div class="arrow-circle2"></div>
+        <div class="arrow-circle1"></div>
+        <img src="./assets/images/chevron-right.svg" alt="arrow" class="service__item-arrow">
+      </div>
+    </section>
+
+    <!-- <section class="sec1 center">Lorem ipsum dolor sit amet.</section>
+    <section class="sec1 center">Lorem ipsum dolor sit amet.</section> -->
+
+    <!-- <footer class="footer center">Lorem, ipsum dolor.</footer> -->
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    // HelloWorld
+
   }
 }
 </script>
@@ -171,6 +234,7 @@ export default {
     margin-top: 30px;
     margin-left: 30px;
     margin-right: 30px;
+    width: 1860px;
     display: flex;
     align-items: center;
     &__categories {
@@ -213,20 +277,48 @@ export default {
     }
   }
 
+  #circle1 {
+    position: absolute;
+    border-radius: 50%;
+    width: 1056px;
+    height: 1056px;
+    left: 724.16px;
+    top: 0px;
+    filter: blur(200px);
+    background: radial-gradient(50.00% 50.00% at 50% 50%,rgb(255, 107, 0),rgba(255, 107, 0, 0) 100%);
+    opacity: 0.2;
+  }
+  #circle2 {
+    position: absolute;
+    width: 182px;
+    height: 182px;
+    border-radius: 50%;
+    left: 177px;
+    top: 234px;
+    background: conic-gradient(from 180deg at 50% 50%, rgb(238, 243, 248), rgba(238, 243, 248, 0));
+  }
+  #circle3 {
+    position: absolute;
+    width: 1118px;
+    height: 1118px;
+    border-radius: 50%;
+    left: 597px;
+    top: 0px;
+    background: conic-gradient(from 180deg at 50% 50%, rgb(238, 243, 248), rgba(238, 243, 248, 0));
+    opacity: 0.6;
+  }
+
   .mainBanner {
+    position: relative;
     margin-left: 74px;
     margin-right: 58px;
     height: 1118px;
+    width: 1788px;
     &__title {
-      width: 635px;
-      // height: 300px;
+      width: 635px;     
       position: absolute;
-      // width: 625px;
-      // height: 492px;
-      left: 307.16px;
-      right: 855.62px;
-      top: 390.29px;
-      bottom: 235.83px;
+      left: 277px;
+      top: 295px;
     }
     &__name {
       @include textDecoration("Bebas Neue", 700, 100px, 100px, calc(1em * -0.08));
@@ -254,129 +346,21 @@ export default {
       border: 2px solid $buttonColor;
       background: rgb(255,255,255);
     }
-    &__action {
-      position: absolute;
-      left: 1340.16px;
-      right: 183.62px;
-      top: 431.29px;
-      bottom: 339.83px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      width: 204px;
-      height: 309px;
-      background-color: white;
-      border-radius: 30px;
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-    &__discount {
-      margin-top: -38px;
-      display: flex;
-      flex-direction: row;
-      align-items: flex-end;
-      gap: 21px;
-      &-text {
-        @include textDecoration('Bebas Neue', 700, 113px, 113px, calc(1em * -0.01));
-        color: $discountTextColor;
-      }
-      &-image {
-        width: 24px;
-        height: 32px;
-        margin-bottom: 20px;
-      }
-    }
-    &__content {
-      @include textDecoration(Gilroy, 400, 18px, 26px);
-       color: $mainTextColor;
-    }
-    &__line {
-      margin-top: 22px;
-      margin-bottom: 22px;
-      color: rgba(19, 23, 29, 0.5);
-      width: 204px;
-    }
-    &__counter {
-      &-title {
-        margin: 0px;
-        @include textDecoration(Gilroy, 600, 20px, 24px, calc(1em * -0.01));
-        color: rgba(19, 23, 29, 0.5);
-      }
-      &-content {
-        display: flex;
-        flex-direction: row;
-        gap: 6px;
-      }
-      &-item {
-        width: 48px;
-      }
-      &-devider {
-        @include textDecoration(Gilroy, 600, 32px, 38px, calc(1em * -0.01));
-        color: $mainTextColor;
-      }
-
-    }
-    &__elements {
-      position: absolute;
-      width: 1787.78px;
-      height: 585.52px;
-      left: 74px;
-      right: -74px;
-      top: 363.56px;
-      bottom: 169.04px;
-      &-waves {
-        position: absolute;
-        width: 98.3px;
-        height: 62.01px;
-        left: 92.43%;
-        right: 2.07%;
-        top: 62.09%;
-        bottom: 27.32%;
-      }
-      &-arrow {
-        position: absolute;
-        width: 88.71px;
-        height: 13.01px;
-        left: 42.93%;
-        right: 52.11%;
-        top: 70.23%;
-        bottom: 27.55%;
-      }
-      &-dots {
-        position: absolute;
-        width: 56.4px;
-        height: 56.38px;
-        left: 100.98%;
-        right: -4.14%;
-        top: 148.6%;
-        bottom: -58.23%;
-      }
-      &-ellipse {
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        left: 74px;
-        right: 1663.78px;
-        top: 899.08px;
-        bottom: -363.56px;
-      }
-    }
     &__master {
       position: absolute;
-      width: 765px;
-      height: 851.27px;
-      left: 839.16px;
-      right: 183.62px;
-      top: 185.29px;
-      bottom: 81.56px;
+      left: -3px;
+      top: -42px;
+      &-vector {
+        position: absolute;
+        left: 1287.7px;
+        top: 206.7px;
+        border: 1px solid rgb(19, 23, 29);
+        visibility: hidden;
+      }
       &-image {
-        // position: absolute;
-        // width: 765px;
-        // height: 851.27px;
-        // left: 839.16px;
-        // right: -839.16px;
-        // top: 185.29px;
-        // bottom: -185.29px;
+        position: absolute;
+        left: 965px;
+        top: 239px;
       }
       &-circle {
         position: absolute;
@@ -396,7 +380,7 @@ export default {
         border-radius: 382.5px;
         left: 839.16px;
         top: 271.56px;
-        border: 1px dashed rgb(0, 0, 0);
+        border: 2px dashed rgb(0, 0, 0);
         opacity: 0.3;
       }
       &-monitor {
@@ -461,14 +445,99 @@ export default {
         background: rgb(255, 255, 255);        
       }
     }
-    &__advantages {
+    &__elements {
+      position: relative;
+      width: 1788px;
+      height: 585.5px;
+      top: 363.6px;
+      &-waves {
+        position: absolute;
+        left: 1586.5px;
+        top: 0px;
+      }
+      &-arrow {
+        position: absolute;
+        left: 701.5px;
+        top: 47.6px;
+      }
+      &-dots {
+        position: absolute;
+        right: -54.6px;
+        top: 506.5px;
+      }
+      &-ellipse {
+        position: absolute;
+        left: 0px;
+        top: 535.5px;
+      }
+    }
+    &__action {
       position: absolute;
+      left: 1340.16px;
+      right: 183.62px;
+      top: 431.29px;
+      bottom: 339.83px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 204px;
+      height: 309px;
+      background-color: white;
+      border-radius: 30px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    &__discount {
+      margin-top: -38px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      gap: 21px;
+      &-text {
+        @include textDecoration('Bebas Neue', 700, 113px, 113px, calc(1em * -0.01));
+        color: $discountTextColor;
+      }
+      &-image {
+        width: 24px;
+        height: 32px;
+        margin-bottom: 20px;
+      }
+    }
+    &__content {
+      @include textDecoration(Gilroy, 400, 18px, 26px);
+       color: $mainTextColor;
+    }
+    &__line {
+      margin-top: 22px;
+      margin-bottom: 22px;
+      color: rgba(19, 23, 29, 0.5);
+      width: 204px;
+    }
+    &__counter {
+      &-title {
+        margin: 0px;
+        @include textDecoration(Gilroy, 600, 20px, 24px, calc(1em * -0.01));
+        color: rgba(19, 23, 29, 0.5);
+      }
+      &-content {
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+      }
+      &-item {
+        width: 48px;
+      }
+      &-devider {
+        @include textDecoration(Gilroy, 600, 32px, 38px, calc(1em * -0.01));
+        color: $mainTextColor;
+      }
+    }
+    &__advantages {
+      position: relative;
       width: 1298px;
       height: 192px;
-      left: 352px;
-      right: 137.78px;
-      top: 1021px;
-      bottom: -94.87px;
+      left: 311px;
+      top: 400px;
       display: flex;
       justify-content: space-between;
       &-item {
@@ -502,44 +571,126 @@ export default {
     @include textDecoration(Gilroy, 600, 11px, 13px, calc(1em * -0.01));
         color: rgba(19, 23, 29, 0.5);
   }
-  #circle1 {
-    position: absolute;
-    border-radius: 528px;
-    width: 1056px;
-    height: 1056px;
-    left: 724.16px;
-    right: 7.62px;
-    top: 96.29px;
-    bottom: -34.17px;
-    filter: blur(200px);
-    background: radial-gradient(50.00% 50.00% at 50% 50%,rgb(255, 107, 0),rgba(255, 107, 0, 0) 100%);
-    opacity: 0.2;
-  }
-  #circle2 {
-    position: absolute;
-    width: 182px;
-    height: 182px;
-    border-radius: 91px;
-    left: 243.16px;
-    right: 1362.62px;
-    top: 330.29px;
-    bottom: 605.83px;
-    background: conic-gradient(from 180deg at 50% 50%, rgb(238, 243, 248), rgba(238, 243, 248, 0));
-  }
-  #circle3 {
-    position: absolute;
-    width: 1117px;
-    height: 1118.13px;
-    border-radius: 559px;
-    left: 663.16px;
-    right: 7.62px;
-    top: 95px;
-    bottom: -95px;
-    background: conic-gradient(from 180deg at 50% 50%, rgb(238, 243, 248), rgba(238, 243, 248, 0));
-    opacity: 0.6;
-  }
+
   #gear-img {
     opacity: 0.1;
   }
+
+  .service {
+    margin: 0 auto;
+    padding-top: 240px;
+    padding-bottom: 80px;
+    width: 1298px;
+    height: 770px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 30px;
+    &__title {
+      position: absolute;
+      text-transform: uppercase;
+      top: 106px;
+      @include textDecoration("Bebas Neue", 700, 80px, 84px, calc(1em * -0.25));
+      color: $mainTextColor;
+    }
+    &__item {      
+      width: 302px;
+      height: 390px;
+      position: relative;
+      &-title {        
+        position: absolute;
+        left:30px;
+        top: 259px;
+        @include textDecoration(Gilroy, 600, 22px, 30px);
+        color: $mainTextColor;
+      }
+      &-vector {
+        // width: 77.7px;
+        // height: 77.7px;
+        position: absolute;
+        top: 58.3px;
+        left: 14.4px;
+      }
+      &-img {        
+        // width: 183px;
+        // height: 241px;
+        position: absolute;
+        left: 35px;
+      }    
+      &-logo {
+        // width: 32.58px;
+        // height: 40px;
+        position: absolute;
+        top: 137px;
+        left: 201px;
+      }
+      &-logoCircle{
+        width: 92px;
+        height: 92px;
+        position: absolute;
+        top: 111px;
+        left: 171px;
+        box-shadow: 0px 10px 10px 0px rgba(255, 107, 0, 0.05),0px 20px 40px 0px rgba(255, 107, 0, 0.13);
+        background: rgb(255, 255, 255);
+        border-radius: 50%;
+      }
+      &-arrow {        
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 317px;
+        left: 238px;
+      }
+      &-rectangle {        
+        width: 302px;
+        height: 310px;
+        position: absolute;
+        top: 30px;
+        border-radius: 30px;
+        clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 90%);
+        box-shadow: 0px 8px 10px 0px rgba(255, 107, 0, 0.08),0px 50px 60px 0px rgba(255, 107, 0, 0.08);
+        background: rgb(255, 255, 255);
+        opacity: 0.5;
+      }
+    }
+  }
+  .span-col {
+      position: relative;
+      grid-column: auto / span 2;
+    }
+
+  .service-circle {    
+    width: 182px;
+    height: 182px;
+    border-radius: 50%;
+    position: absolute;
+    left: 231px;
+    top: 113px;
+    transform: rotate(30.00deg);
+    background: conic-gradient(from 180deg at 50% 50%, rgb(238, 243, 248), rgba(238, 243, 248, 0));
+    opacity: 0.8;
+  }
+  .arrow-circle1 {    
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 308px;
+    left: 230px;
+    box-shadow: 0px 10px 10px 0px rgba(255, 107, 0, 0.05),0px 20px 40px 0px rgba(255, 107, 0, 0.13);
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+  }
+  .arrow-circle2 {    
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 296px;
+    left: 218px;
+    box-shadow: 0px 10px 10px 0px rgba(255, 107, 0, 0.05),0px 20px 40px 0px rgba(255, 107, 0, 0.13);
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+  }
+
 }
 </style>
