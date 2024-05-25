@@ -174,8 +174,146 @@
       </div>
     </section>
 
-    <!-- <section class="sec1 center">Lorem ipsum dolor sit amet.</section>
-    <section class="sec1 center">Lorem ipsum dolor sit amet.</section> -->
+    <section class="aboutCompany center">
+      <div class="aboutCompany__left">
+        <img src="./assets/images/grey-arrows.svg" alt="grey arrows image" class="aboutCompany__vector">
+        <div class="aboutCompany__title">О компании Arron</div>
+        <div class="aboutCompany__subtitle">Узнайте больше о нашей компании из видео за 1 минуту.</div>
+        <div class="aboutCompany__button">
+          <p class="aboutCompany__button-name">Смотреть</p>
+          <img src="./assets/images/play-white.svg" alt="play image" class="aboutCompany__button-img">
+        </div>
+      </div>
+      <div class="aboutCompany__right">
+        <div class="aboutCompany__right-card">
+          <img src="./assets/images/truck.svg" alt="truck image">
+          <p class="aboutCompany__right-cardTitle">Выезжаем в любую точку Кишинева</p>
+          <p class="aboutCompany__right-cardText">Выезд курьера Буюканы, Чеканы,<br>Рышкановка, центр, Ботаника.</p>          
+        </div>
+        <div class="aboutCompany__right-card">
+          <img src="./assets/images/clock.svg" alt="clock image">
+          <p class="aboutCompany__right-cardTitle">Работы от 30 минут</p>
+          <p class="aboutCompany__right-cardText">Время работы или настройки занимает<br>от 30 минут до нескольких часов.</p>    
+        </div>
+        <div class="aboutCompany__right-card">
+          <img src="./assets/images/money.svg" alt="money image">
+          <p class="aboutCompany__right-cardTitle">Удобный способ оплаты</p>
+          <p class="aboutCompany__right-cardText">Оплата наличными или по<br>перечислению компаниям.</p>    
+        </div>
+        <div class="aboutCompany__right-card">
+          <img src="./assets/images/shild.svg" alt="shild image">
+          <p class="aboutCompany__right-cardTitle">Гарантия на все выполненные услуги</p>
+          <p class="aboutCompany__right-cardText">Запчасти, фотографии и сообщения<br>под Вашим контролем. После работ<br>инженер отдаст Вам старые запчасти.</p>    
+        </div>
+      </div>
+      <img src="./assets/images/wave.svg" alt="wave image" class="aboutCompany__wave">
+    </section>
+
+
+    <section class="feedback center">
+      <img src="./assets/images/ellipse.svg" alt="ellipse image" class="feedback__vector1">
+      <img src="./assets/images/dots.svg" alt="dots image" class="feedback__vector2">
+      <div class="feedback__header">
+        <div class="feedback__title">Отзывы счастливых клиентов</div>
+        <div class="carousel__buttons">
+          <div class="buttonCircle">
+            <img src="./assets/images/chevron-left.svg" alt="left button arrow" class="buttonCircle-left">
+          </div>
+          <div class="buttonCircle">
+            <img src="./assets/images/chevron-right.svg" alt="right bbuttonCircleutton arrow" class="buttonCircle-right">
+          </div>
+        </div>
+      </div>
+
+      <div class="feedback__content">
+        <div class="feedback__content-item">
+          <img src="./assets/images/feedback_1.jpg" alt="feedback snap image" class="feedback__img">
+          <div class="feedback__btn">
+            <div class="feedback__btn-circle1"></div>
+            <div class="feedback__btn-circle2"></div>
+            <img src="./assets/images/play.svg" alt="play image" class="feedback__btn-play">
+          </div>
+        </div>
+        <div class="feedback__content-item">
+          <img src="./assets/images/feedback_2.jpg" alt="feedback snap image" class="feedback__img">
+          <div class="feedback__btn">
+            <div class="feedback__btn-circle1"></div>
+            <div class="feedback__btn-circle2"></div>
+            <img src="./assets/images/play.svg" alt="play image" class="feedback__btn-play">
+          </div>
+        </div>
+        <div class="feedback__content-item">
+          <img src="./assets/images/feedback_3.jpg" alt="feedback snap image" class="feedback__img">
+          <div class="feedback__btn">
+            <div class="feedback__btn-circle1"></div>
+            <div class="feedback__btn-circle2"></div>
+            <img src="./assets/images/play.svg" alt="play image" class="feedback__btn-play">
+          </div>
+        </div>
+        <div class="feedback__content-item">
+          <img src="./assets/images/feedback_4.jpg" alt="feedback snap image" class="feedback__img">
+          <div class="feedback__btn">
+            <div class="feedback__btn-circle1"></div>
+            <div class="feedback__btn-circle2"></div>
+            <img src="./assets/images/play.svg" alt="play image" class="feedback__btn-play">
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel__nav">
+        <div class="carousel__nav-item" id="checked"></div> 
+        <div class="carousel__nav-item"></div> 
+        <div class="carousel__nav-item"></div> 
+        <div class="carousel__nav-item"></div> 
+        <div class="carousel__nav-item"></div> 
+      </div>
+
+    </section>
+
+    <section class="complOrders center"></section>
+
+    <!-- <section class="arronService center">
+      <div class="arronService__vector"></div>
+      <img src="./assets/images/ellipse.svg" alt="check list icon" class="arronService__vector1">
+      <img src="./assets/images/dots.svg" alt="check list icon" class="arronService__vector2">
+      <div class="arronService__content">
+        <div class="arronService__left">
+          <p class="arronService__title">что делать если ноутбук или телефон медленно работает</p>
+          <div class="arronService__solution">
+            <img src="./assets/images/check_list_icon.svg" alt="check list icon" class="arronService__icon">
+            <p class="arronService__text">Получите чек лист - Что делать, если ноутбук или телефон грузится</p>
+          </div>          
+          <div class="arronService__button">Получить чек лист</div>          
+        </div>
+        <div class="arronService__right">
+          <div class="arronService__right-item">
+            <p class="arronService__title">Наши услуги</p>
+            <ul class="arronService__list">
+              <li>ремонт ноутбуков</li>
+              <li>ремонт смартфонов</li>
+              <li>заправка и ремонт картриджей</li>
+              <li>установка СНПЧ</li>
+              <li>ремонт компьютеров</li>
+              <li>ремонт моноблоков</li>
+            </ul>
+          </div>
+          <div class="arronService__right-item">
+            <ul class="arronService__list">
+              <li>ремонт планшетов</li>
+              <li>ремонт КПК</li>
+              <li>ремонт принтеров</li>
+              <li>ремонт роутеров</li>
+              <li>всстановление жестких дисков</li>
+              <li>компьютерная помощь и IT аутсорсинг и др.</li>
+            </ul>
+          </div>       
+        </div>
+      </div>
+    </section> -->
+
+    <section class="gifts center"></section>
+    <section class="about center"></section>
+    <section class="lid center"></section>
 
     <!-- <footer class="footer center">Lorem, ipsum dolor.</footer> -->
   </div>
@@ -219,7 +357,7 @@ export default {
               url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.ttf') format('truetype');
         font-weight: 600;
         font-style: normal;
-      }
+  }
   
   // a {
   //   text-decoration: none;
@@ -569,7 +707,7 @@ export default {
   }
   .item-title {
     @include textDecoration(Gilroy, 600, 11px, 13px, calc(1em * -0.01));
-        color: rgba(19, 23, 29, 0.5);
+    color: rgba(19, 23, 29, 0.5);
   }
 
   #gear-img {
@@ -658,7 +796,7 @@ export default {
   .span-col {
       position: relative;
       grid-column: auto / span 2;
-    }
+  }
 
   .service-circle {    
     width: 182px;
@@ -691,6 +829,299 @@ export default {
     background: rgb(255, 255, 255);
     border-radius: 50%;
   }
+
+  .aboutCompany {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 110px;
+    height: 545px;
+    // width: 1298px;
+    margin: 0 auto;
+    background: linear-gradient(180.00deg, rgb(235, 243, 248),rgba(235, 243, 248, 0) 100%);
+    &__left {
+      position: relative;
+      padding-left: 311px;
+      padding-top: 80px;
+      width: 333px;
+      height: 402px;
+      display: flex;
+      flex-direction: column;
+    }
+    &__title {
+      text-transform: uppercase;
+      @include textDecoration("Babes Neue", 700, 80px, 80px, calc(1em * -0.35));
+      color: $mainTextColor;
+    }
+    &__subtitle {
+      padding-top: 24px;
+      padding-bottom: 64px;
+      @include textDecoration(Gilroy, 400, 24px, 30px);
+      color: $mainBannerSubtitleColor;
+    }
+    &__vector {
+      position: absolute;
+      left: 537px;
+      top: 186px;
+    }
+    &__button {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 16px;
+      padding: 18px 30px;
+      width: 122px;
+      height: 28px;
+      border-radius: 15px;
+      background: rgb(226, 0, 26);
+      &-name {
+        @include textDecoration(Montserrat, 600, 16px, 26px);
+        color: $buttonTextColor;
+      }
+      &-img {
+        width: 14px;
+        height: 18px;
+      }
+    }
+    &__right {
+      padding-top: 97px;
+      width: 788px;
+      margin-right: 75px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      row-gap: 40px;
+      column-gap: 80px;
+      &-card {
+        display: inline-block;
+      }
+      &-cardTitle {
+        @include textDecoration(Gilroy, 600, 20px, 24px);
+        color: $mainTextColor;
+      }
+      &-cardText {
+        @include textDecoration(Gilroy, 400, 18px, 24px);
+        color: $mainBannerSubtitleColor;
+      }
+    }
+    &__wave {
+      position: absolute;
+      left: 1645px;
+      top: 417px;
+      width: 98px;
+    }
+  }
+
+  .buttonCircle {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 23px;
+    box-shadow: 0px 8px 16px 0px rgba(255, 107, 0, 0.16);
+    background: rgb(255, 255, 255);
+  }
+
+  .carousel {
+      &__buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+      }
+      &__nav {
+        width: 112px;
+        height: 16px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 8px;
+        &-item {
+          width: 4px;
+          height: 4px;
+          background: $mainTextColor;
+          box-sizing: border-box;
+          padding: 6px;
+          border-radius: 50%;
+          opacity: 0.5;
+        }
+        &-item#checked {
+          width: 8px;
+          height: 8px;
+          background: $commonBgColor;
+          box-sizing: border-box;
+          border: 4px solid $buttonColor;
+          border-radius: 50%;
+          opacity: 1;
+        }
+      }
+    }
+
+  .feedback {
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    width: 1300px;
+    height: 420px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    &__header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__title {
+      text-transform: uppercase;
+      @include textDecoration("Babes Neue", 700, 56px, 56x, calc(1em * -0.35));
+      color: $mainTextColor;
+    }
+    &__content{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 30px;
+      &-item {
+        width: 302px;
+        height: 250px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    &__btn {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      &-circle1 {
+        width: 72px;
+        height: 72px;
+        box-shadow: 0px 10px 10px 0px rgba(255, 107, 0, 0.05),0px 20px 40px 0px rgba(255, 107, 0, 0.13);
+        background: rgb(255, 255, 255);
+        border-radius: 50%;
+        opacity: 0.5;
+      }
+      &-circle2 {
+        width: 56px;
+        height: 56px;
+        box-shadow: 0px 10px 10px 0px rgba(255, 107, 0, 0.05),0px 20px 40px 0px rgba(255, 107, 0, 0.13);
+        background: rgb(255, 255, 255);
+        border-radius: 50%;
+      }
+      &-play {
+        width: 10.5px;
+        height: 13.5px;
+      }
+    }
+    &__img {
+      border-radius: 15px;
+    }
+    &__vector1 {
+      position: absolute;
+      left: -211px;
+      top: 287px;
+    }
+    &__vector2 {
+      position: absolute;
+      left: 1488px;
+      top: 258px;
+    }
+  }
+  
+  .arronService {
+    position: relative;
+    margin: 0 auto;
+    width: 1476px;
+    margin-top: -65px;
+    padding-top: 160px;
+    &__content {
+      padding-left: 126px;
+      padding-right: 134px;
+      display: flex;
+      flex-direction: row;
+      gap: 125px;
+      align-items: center;
+    }
+    &__left {
+      max-width: 427px;
+      display: flex;
+      flex-direction: column;
+    }
+    &__title {
+      text-transform: uppercase;
+      margin: 0 0;
+      @include textDecoration("Babes Neue", 700, 48px, 48x, calc(1em * -0.3));
+      color: $mainTextColor;
+    }
+    &__icon {
+      width: 35px;
+      height: 45px;
+    }
+    &__text {
+      @include textDecoration(Montserrat, 400, 14px, 17x);
+      color: black;
+    }
+    &__solution {
+      width: 333px;
+      padding-top: 6px;
+      padding-bottom: 32px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+    }
+    &__button {
+      text-align: center;
+      padding: 29px 35px 24px;
+      width: 260px;
+      height: 28px;
+      border-radius: 15px;
+      background: $buttonColor;
+      @include textDecoration(Montserrat, 600, 16px, 26px);
+      color: $buttonTextColor;
+    }
+    &__right {
+      display: flex;
+      flex-direction: row;
+      gap: 32px;
+      align-items: center;
+      &-item{
+        display: inline-block;
+      }
+    }
+    &__list li {
+      padding-bottom: 18px;
+      @include textDecoration(Montserrat, 400, 18px, 24px);
+      color: $mainBannerSubtitleColor;
+    }
+    &__list li::marker {
+      color: $buttonColor;
+      font-size: 24px;
+    }
+    &__vector {
+      position: absolute;
+      width: 276px;
+      height: 276px;
+      left: 0px;
+      top: 0px;      
+      background: conic-gradient(from 180deg at 50% 50%, rgb(238, 243, 248), rgba(238, 243, 248, 0));
+      border-radius: 50%;
+    }
+    &__vector2 {
+      position: absolute;
+      left: 1294px;
+      top: 69px;
+    }
+    &__vector1 {
+      position: absolute;
+      left: 1426px;
+      top: 490px;
+    }
+  }
+
+
 
 }
 </style>
