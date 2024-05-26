@@ -209,7 +209,6 @@
       <img src="./assets/images/wave.svg" alt="wave image" class="aboutCompany__wave">
     </section>
 
-
     <section class="feedback center">
       <img src="./assets/images/ellipse.svg" alt="ellipse image" class="feedback__vector1">
       <img src="./assets/images/dots.svg" alt="dots image" class="feedback__vector2">
@@ -270,9 +269,47 @@
 
     </section>
 
-    <section class="complOrders center"></section>
+    <section class="complOrders center">
+      <img src="./assets/images/wave.svg" alt="wawes image" class="complOrders__vector1">
+      <img src="./assets/images/grey-arrows.svg" alt="arrows image" class="complOrders__vector2">
+      <div class="complOrders__o">
 
-    <!-- <section class="arronService center">
+        <div class="complOrders__header">
+          <div class="complOrders__title">Выполненные заказы</div>
+          <div class="carousel__buttons">
+            <div class="buttonCircle">
+              <img src="./assets/images/chevron-left.svg" alt="left button arrow" class="buttonCircle-left">
+            </div>
+            <div class="buttonCircle">
+              <img src="./assets/images/chevron-right.svg" alt="right bbuttonCircleutton arrow" class="buttonCircle-right">
+            </div>
+          </div>
+        </div>
+
+        <div class="complOrders__content">
+          <div class="complOrders__content-item">
+            <img src="./assets/images/order1.jpg" alt="complOrders snap image" class="complOrders__img">
+          </div>
+          <div class="complOrders__content-item">
+            <img src="./assets/images/order2.jpg" alt="complOrders snap image" class="complOrders__img">
+          </div>
+          <div class="complOrders__content-item">
+            <img src="./assets/images/order3.jpg" alt="complOrders snap image" class="complOrders__img">
+          </div>
+        </div>
+
+        <div class="carousel__nav">
+          <div class="carousel__nav-item" id="checked"></div> 
+          <div class="carousel__nav-item"></div> 
+          <div class="carousel__nav-item"></div> 
+          <div class="carousel__nav-item"></div> 
+          <div class="carousel__nav-item"></div> 
+        </div>
+
+    </div>
+    </section>
+
+    <section class="arronService center">
       <div class="arronService__vector"></div>
       <img src="./assets/images/ellipse.svg" alt="check list icon" class="arronService__vector1">
       <img src="./assets/images/dots.svg" alt="check list icon" class="arronService__vector2">
@@ -309,13 +346,245 @@
           </div>       
         </div>
       </div>
-    </section> -->
+    </section>
 
-    <section class="gifts center"></section>
-    <section class="about center"></section>
-    <section class="lid center"></section>
+    <section class="gifts center">
+      <div class="gifts__circle"></div>
+      <div class="gifts__content">        
+        <div class="gifts__title">На каждый ремонт гарантировано подарок на ваш выбор :</div>
+        <div class="gifts__header">
+          <div></div>
+          <div class="carousel__buttons">
+            <div class="buttonCircle">
+              <img src="./assets/images/chevron-left.svg" alt="left button arrow" class="buttonCircle-left">
+            </div>
+            <div class="buttonCircle">
+              <img src="./assets/images/chevron-right.svg" alt="right bbuttonCircleutton arrow" class="buttonCircle-right">
+            </div>
+          </div>
+        </div>
 
-    <!-- <footer class="footer center">Lorem, ipsum dolor.</footer> -->
+        <div class="gifts__cards">
+          <div class="gifts__cards-item">
+            <div class="gifts__cards-rect"></div>
+            <img src="./assets/images/wave.svg" alt="" class="gifts__cards-vector1">
+            <img src="./assets/images/ellipse-grey.svg" alt="" class="gifts__cards-vector2">
+            <img src="./assets/images/gift1.png" alt="" class="gifts__cards-img">
+            <p class="gifts__cards-name">Чехлы</p>
+          </div>
+
+          <div class="gifts__cards-item">
+            <div class="gifts__cards-rect"></div>
+            <img src="./assets/images/triangle.svg" alt="" class="gifts__cards-vector1">
+            <img src="./assets/images/ellipse.svg" alt="" class="gifts__cards-vector2">
+            <img src="./assets/images/gift2.png" alt="" class="gifts__cards-img">
+            <p class="gifts__cards-name">Защитные стекла</p>
+          </div>
+
+          <div class="gifts__cards-item">
+            <div class="gifts__cards-rect"></div>
+            <img src="./assets/images/yellow-arrows.svg" alt="" class="gifts__cards-vector1">
+            <img src="./assets/images/polygon2.svg" alt="" class="gifts__cards-vector2">
+            <img src="./assets/images/gift3.png" alt="" class="gifts__cards-img">
+            <p class="gifts__cards-name">Кабели</p>
+          </div>
+
+          <div class="gifts__cards-item">
+            <div class="gifts__cards-rect"></div>
+            <img src="" alt="" class="gifts__cards-vector1">
+            <img src="./assets/images/wave.svg" alt="" class="gifts__cards-vector2">
+            <img src="./assets/images/gift4.png" alt="" class="gifts__cards-img">
+            <p class="gifts__cards-name">Car holder</p>
+          </div>
+
+          <div class="gifts__cards-item" id="hidden">
+            <div class="gifts__cards-rect"></div>
+            <img src="" alt="" class="gifts__cards-vector1">
+            <img src="" alt="" class="gifts__cards-vector2">
+            <img src="./assets/images/gift5.png" alt="" class="gifts__cards-img">
+            <p class="gifts__cards-name">Зарядки</p>
+          </div>
+
+          <div class="gifts__cards-item" id="hidden">
+            <div class="gifts__cards-rect"></div>
+            <img src="" alt="" class="gifts__cards-vector1">
+            <img src="" alt="" class="gifts__cards-vector2">
+            <img src="./assets/images/gift6.png" alt="" class="gifts__cards-img">
+            <p class="gifts__cards-name">Наушники</p>
+          </div>
+
+          <div class="gifts__cards-item" id="hidden">
+            <div class="gifts__cards-rect"></div>
+            <img src="" alt="" class="gifts__cards-vector1">
+            <img src="" alt="" class="gifts__cards-vector2">
+            <img src="./assets/images/gift7.png" alt="" class="gifts__cards-img">
+            <p class="gifts__cards-name">Другие аксесуары</p>
+          </div>
+        </div>
+
+        <div class="carousel__nav">
+          <div class="carousel__nav-item" id="checked"></div> 
+          <div class="carousel__nav-item"></div> 
+          <div class="carousel__nav-item"></div> 
+          <div class="carousel__nav-item"></div> 
+          <div class="carousel__nav-item"></div> 
+        </div>
+      </div>
+
+    </section>
+
+    <section class="about center">
+      <img src="./assets/images/wave-blue.svg" alt="wave image" class="about__vector1">
+      <img src="./assets/images/grey-arrows.svg" alt="wave image" class="about__vector2">
+      <img src="./assets/images/ellipse.svg" alt="wave image" class="about__vector3">
+      <div class="about__header">
+        <img src="./assets/images/quotation.svg" alt="" class="about__header-el1">
+        <div class="about__header-el2">
+          В нашей компании работают лучшие специалисты, которые прекрасно разбираются 
+          в современных технологиях и имеют более 3-х лет опыта работы.
+        </div>
+        <img src="./assets/images/quotation.svg" alt="" class="about__header-el3">
+      </div>
+      
+      <div class="about__content">
+        <div class="about__content-left">
+          <p class="about__content-text">
+            За счет этого мы гарантируем устранение любых неполадок и 
+            предоставляем гарантию на все выполненные работы.
+          </p>
+          <p class="about__content-text">
+            Мы поможем не только восстановить работоспособность техники, но и подскажем, 
+            как избежать возникновения подобных поломок в будущем.
+          </p>
+          <p class="about__content-text">
+            Квалифицированная консультация специалиста поможет безопасно пользоваться 
+            компьютером. В нашем штате работают опытные специалисты.
+          </p>
+        </div>
+        <div class="about__content-right">
+          <div class="about__content-buttons">
+            <img src="./assets/images/master3.jpg" alt="about master image" class="about__content-img">
+
+            <div class="about__content-backward">
+              <div class="about__content-circle1"></div>
+              <div class="about__content-circle2"></div>
+              <img src="./assets/images/chevron-left.svg" alt="" class="about__content-arrow">
+            </div>
+
+            <div class="about__content-forward">
+              <div class="about__content-circle1"></div>
+              <div class="about__content-circle2"></div>
+              <img src="./assets/images/chevron-right.svg" alt="" class="about__content-arrow">
+            </div>
+          </div>  
+
+          <div class="carousel__nav">
+            <div class="carousel__nav-item" id="checked"></div> 
+            <div class="carousel__nav-item"></div> 
+            <div class="carousel__nav-item"></div> 
+            <div class="carousel__nav-item"></div> 
+            <div class="carousel__nav-item"></div> 
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <section class="lid center">
+      <div class="lid__content">
+          <div class="lid__left">
+            <div class="lid__discount">
+              <div class="lid__discount-rect">&nbsp;</div>
+              <span class="lid__discount-text">50%</span>
+
+              <img src="./assets/images/fire.svg" class="lid__discount-image" alt="fire image">
+            </div>
+            <p class="lid__left-title">Записаться на диагностику в <span class="lid__left-title" id="colored">удобное</span> вам время</p>
+          </div>
+
+          <div class="lid__right">
+            <input type="text" placeholder="День" class="lid__right-input">
+            <input type="text" placeholder="Время" class="lid__right-input">
+            <input type="text" placeholder="Телефон" class="lid__right-input span-col">
+            <div class="lid__right-button">Записаться</div>
+          </div>
+      </div>
+    </section>
+
+    <footer class="footer center">
+      <p class="footer__title">Наши контакты</p>
+
+      <div class="footer__media">
+        <div class="footer__media-img">
+          <img src="./assets/images/contacts1.jpg" alt="contacns image" class="footer__img">
+          <div class="footer-backward">
+              <div class="footer-circle1"></div>
+              <div class="footer-circle2"></div>
+              <img src="./assets/images/chevron-left.svg" alt="" class="footer-arrow">
+            </div>
+
+            <div class="footer-forward">
+              <div class="footer-circle1"></div>
+              <div class="footer-circle2"></div>
+              <img src="./assets/images/chevron-right.svg" alt="" class="footer-arrow">
+            </div>
+            <div class="carousel__nav">
+              <div class="carousel__nav-item" id="checked"></div> 
+              <div class="carousel__nav-item"></div> 
+              <div class="carousel__nav-item"></div> 
+              <div class="carousel__nav-item"></div> 
+              <div class="carousel__nav-item"></div> 
+            </div>
+        </div>
+        <div class="footer__media-video">
+          <img src="./assets/images/contacts2.jpg" alt="contacns image" class="footer__img">
+          <div class="footer__btn">
+            <div class="footer__btn-circle1"></div>
+            <div class="footer__btn-circle2"></div>
+            <img src="./assets/images/play.svg" alt="play image" class="footer__btn-play">
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__contacts">
+        <div class="footer__conts">
+          <div class="footer__conts-item">
+            <img src="./assets/images/phone-icon.svg" alt="" class="footer__conts-img">
+            <p class="footer__conts-text">069 82 77 38 / 079 92 77 38</p>
+          </div>
+          <div class="footer__conts-item">
+            <img src="./assets/images/email-icon.svg" alt="" class="footer__conts-img">
+            <p class="footer__conts-text">info@arron.md</p>
+          </div>
+          <div class="footer__conts-item">
+            <img src="./assets/images/drop-icon.svg" alt="" class="footer__conts-img">
+            <p class="footer__conts-text">г. Кишинев, ул. Бэнулеску Бодони, д.33</p>
+          </div>
+        </div>
+
+        <div class="footer__socials">
+        <div class="footer__socials-rating">
+          <p class="footer__socials-text">Рейтинг сервиса</p>
+          <img src="./assets/images/stars.svg" alt="" class="footer__socials-img">
+          <p>4.8/5.0 - 403 голоса</p>
+        </div>
+        <div class="footer__socials-nets">
+          <p class="footer__socials-text">Мы в соцсетях</p>
+          <div class="footer__socials-netsIcons">
+            <img src="./assets/images/instagram.svg" alt="" class="footer__socials-icon">
+            <img src="./assets/images/facebook.svg" alt="" class="footer__socials-icon">
+            <img src="./assets/images/tiktok.svg" alt="" class="footer__socials-icon">
+            <img src="./assets/images/youtube.svg" alt="" class="footer__socials-icon">
+
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+
+    </footer>
   </div>
 </template>
 
@@ -332,12 +601,14 @@ export default {
 <style lang="scss">
 #app {
   $widthSiteDesctop: 1920px;
+  $widthMainBlockDesctop: 1300px;
   $commonBgColor: #f4f9fc;
   $mainTextColor: #13171D;
   $mainBannerSubtitleColor: #444444;
   $buttonTextColor: white;
   $buttonColor: #E2001A;
   $discountTextColor: #FF6b00;
+  $aboutTextColor: #646464;
 
   @mixin textDecoration ($fontFamily, $weight, $size, $lineH:normal, $letterSpacing:normal, $style:normal) {
       font-family: $fontFamily;
@@ -744,8 +1015,6 @@ export default {
         color: $mainTextColor;
       }
       &-vector {
-        // width: 77.7px;
-        // height: 77.7px;
         position: absolute;
         top: 58.3px;
         left: 14.4px;
@@ -961,7 +1230,7 @@ export default {
     margin: 0 auto;
     padding-top: 120px;
     padding-bottom: 120px;
-    width: 1300px;
+    width: $widthMainBlockDesctop;
     height: 420px;
     position: relative;
     display: flex;
@@ -981,6 +1250,7 @@ export default {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       column-gap: 30px;
+      // place-items: center;
       &-item {
         width: 302px;
         height: 250px;
@@ -1029,6 +1299,42 @@ export default {
       top: 258px;
     }
   }
+
+  .complOrders {
+        background: linear-gradient(180.00deg, rgb(235, 243, 248),rgba(235, 243, 248, 0) 100%);
+    &__o {
+      // position: relative;
+      width: $widthMainBlockDesctop;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 48px;
+    }
+    &__header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__title {
+      text-transform: uppercase;
+      @include textDecoration("Babes Neue", 700, 56px, 56px, calc(1em * -0.35));
+      color: $mainTextColor;
+    }
+    &__content{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 32px;
+      &-item {
+        width: 412px;
+        height: 400px;
+      }
+    }
+    &__img {
+      border-radius: 15px;
+    }
+  }
   
   .arronService {
     position: relative;
@@ -1036,6 +1342,7 @@ export default {
     width: 1476px;
     margin-top: -65px;
     padding-top: 160px;
+    padding-bottom: 64px;
     &__content {
       padding-left: 126px;
       padding-right: 134px;
@@ -1052,7 +1359,7 @@ export default {
     &__title {
       text-transform: uppercase;
       margin: 0 0;
-      @include textDecoration("Babes Neue", 700, 48px, 48x, calc(1em * -0.3));
+      @include textDecoration("Babes Neue", 700, 48px, 48px, calc(1em * -0.3));
       color: $mainTextColor;
     }
     &__icon {
@@ -1121,7 +1428,418 @@ export default {
     }
   }
 
+  .gifts {
+    position: relative;
+    margin: 0 auto;
+    background: linear-gradient(180.00deg, rgb(235, 243, 248),rgba(235, 243, 248, 0) 100%);
+    padding-bottom: 145px;
+    &__circle {
+      position: absolute;
+      width: 182px;
+      height: 182px;
+      left: 631px;
+      top: 150px;
+      transform: rotate(30.00deg);
+      background: conic-gradient(from 180deg at 50% 50%, rgb(238, 243, 248), rgba(238, 243, 248, 0));
+      opacity: 0.8;
+      border-radius: 50%;
+    }
+    &__content {
+      width: $widthMainBlockDesctop;
+      margin: 0 auto;
+    }
+    &__title {
+      padding-top: 133px;
+      padding-right: 334px;
+      padding-bottom: 63px;
+      text-transform: uppercase;
+      @include textDecoration("Babes Neue", 700, 80px, 84px, calc(1em * -0.35));
+      color: $mainTextColor;
+    }
+    &__header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 31px;
+      &-item {
+        display: block;
+        width: 302px;
+        height: 310px;
+        position: relative;
+      }
+      &-item#hidden {
+        display: none;
+      }
+      &-rect {
+        width: 302px;
+        height: 310px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 90%);
+        border-radius: 30px;        
+        box-shadow: 0px 8px 10px 0px rgba(255, 107, 0, 0.08),0px 50px 60px 0px rgba(255, 107, 0, 0.08);
+        background: rgb(255, 255, 255);
+        opacity: 0.5;
+      }
+      &-img {
+        position: absolute;
+      }
+      &-vector1 {
+        position: absolute;
+        left: 5px;
+        top: 20px;
+      }
+      &-vector2 {
+        position: absolute;
+        left: 200px;
+        top: 120px;
+      }
+      &-name {
+        position: absolute;
+        left: 30px;
+        top: 220px;
+        @include textDecoration(Gilroy, 600, 22px, 30px);
+        color: $mainTextColor;
+      }
+    }
+  }
 
+  .about {
+    margin: 0 auto;
+    padding-bottom: 84px;
+    width: $widthMainBlockDesctop;
+    position: relative;
+    &__vector1 {
+      position: absolute;
+      left: -94px;
+      top: 136px;
+    }
+    &__vector2 {
+      position: absolute;
+      left: 456px;
+      top: 362px;
+    }
+    &__vector3 {
+      width: 73px;
+      height: 73px;
+      z-index: -1;
+      position: absolute;
+      left: 1157px;
+      top: 635px;
+    }
+    &__header {
+      margin: 0 auto;
+      width: 740px;
+      padding-bottom: 56px;
+      &-el1 {}
+      &-el2 {
+        @include textDecoration(Montserrat, 500, 24px, 32px);
+        text-align: center;
+        color: $mainTextColor;
+      }
+      &-el3 {
+        transform: scale(-1, 1);
+        float: right;
+      }
+    }
+    &__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      &-left {
+        width: 470px;
+      }
+      &-text {
+        @include textDecoration(Montserrat, 400, 18px, 24px);
+        color: $aboutTextColor;
+      }
+      &-right {
+        width: 635px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+      &-img {
+        border-radius: 20px;
+      }
+      &-buttons {
+        width: 715px;
+        display: flex;
+      }
+      &-backward {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+      }
+      &-forward {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+      }
+      &-circle1 {
+        width: 80px;
+        height: 80px;
+        background: rgb(250, 252, 254);
+        border-radius: 50%;
+      }
+      &-circle2 {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        box-shadow: 0px 8px 16px 0px rgba(255, 107, 0, 0.16);
+        background: rgb(255, 255, 255);
+      }
+      &-arrow {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
 
+  .lid {
+    margin: 0 auto;
+    width: $widthMainBlockDesctop;
+    height: 326px;
+    margin-top: 58px;
+    margin-bottom: 117px;
+    box-sizing: border-box;
+    border: 1px solid rgb(199, 209, 215);
+    border-radius: 30px;
+    &__content {
+      width: 1078px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__left {
+      width: 397px;
+      display: flex;
+      flex-direction: column;
+      &-title {
+        text-transform: uppercase;
+        @include textDecoration('Bebas Neue', 700, 48px, 48px, calc(1em * -0.25));
+        color: $mainTextColor;
+      }
+      &-title#colored {
+        color: $buttonColor;
+      }
+    }
+    &__discount {
+      position: relative;
+      margin-top: -58px;
+      width: 190px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      gap: 21px;
+      &-text {
+        z-index: 10;
+        @include textDecoration('Bebas Neue', 700, 113px, 113px, calc(1em * -0.01));
+        color: $discountTextColor;
+        text-align: center;
+      }
+      &-rect {
+        position: absolute;
+        top: 42px;
+        left: 0px;
+        width: 197px;
+        height: 32px;
+        background: $commonBgColor;
+      }
+      &-image {
+        width: 24px;
+        height: 32px;
+        margin-bottom: 90px;
+      }
+    }
+    &__right {
+      padding-top: 48px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      row-gap: 20px;
+      column-gap: 24px;
+      &-input {
+        height: 26px;
+        border-radius: 15px;
+        @include textDecoration(Montserrat, 400, 14px, 26px);
+        border: 1px solid rgb(199, 209, 215);
+        padding: 19px 24px 19px 24px;
+      }
+      &-button {
+        width: 240px;
+        height: 28px;
+        border-radius: 15px;
+        background: $buttonColor;
+        text-align: center;
+        @include textDecoration(Montserrat, 600, 16px, 28px);
+        color: $buttonTextColor;
+        padding: 18px 30px 18px 30px;
+      }
+    }
+  }
+
+  .footer {
+    margin: 0 auto;
+    width: $widthMainBlockDesctop;
+    &__title {
+      text-transform: uppercase;
+      @include textDecoration('Bebas Neue', 700, 56px, 56px, calc(1em * -0.25));
+      color: $mainTextColor;
+      padding-bottom: 40px;
+    }
+    &__media {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: 58px;
+    }
+    &__img {
+      border-radius: 20px;
+    }
+    &-buttons {
+        width: 715px;
+        display: flex;
+      }
+      &-backward {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+      }
+      &-forward {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+      }
+      &-circle1 {
+        width: 80px;
+        height: 80px;
+        background: rgb(250, 252, 254);
+        border-radius: 50%;
+      }
+      &-circle2 {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        box-shadow: 0px 8px 16px 0px rgba(255, 107, 0, 0.16);
+        background: rgb(255, 255, 255);
+      }
+      &-arrow {
+        width: 24px;
+        height: 24px;
+      }
+    &__btn {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      &-circle1 {
+        width: 72px;
+        height: 72px;
+        box-shadow: 0px 10px 10px 0px rgba(255, 107, 0, 0.05),0px 20px 40px 0px rgba(255, 107, 0, 0.13);
+        background: rgb(255, 255, 255);
+        border-radius: 50%;
+        opacity: 0.5;
+      }
+      &-circle2 {
+        width: 56px;
+        height: 56px;
+        box-shadow: 0px 10px 10px 0px rgba(255, 107, 0, 0.05),0px 20px 40px 0px rgba(255, 107, 0, 0.13);
+        background: rgb(255, 255, 255);
+        border-radius: 50%;
+      }
+      &-play {
+        width: 10.5px;
+        height: 13.5px;
+      }
+    }
+
+    &__contacts {
+      width: $widthMainBlockDesctop;
+      height: 290px;
+      border-radius: 30px;
+      box-shadow: 0px 8px 10px 0px rgba(255, 107, 0, 0.08),0px 50px 60px 0px rgba(255, 107, 0, 0.08);
+      background: rgb(255, 255, 255);      
+    }
+
+    &__conts {
+      width: 1160px;
+      margin: 0 auto;
+      padding-top: 55px;
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+
+      &-item {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+
+      }
+      &-img {
+        width: 56px;
+        height: 56px;
+      }
+      &-text {
+        @include textDecoration(Montserrat, 500, 20px, 20px);
+        color: $mainTextColor;
+      }
+    }
+
+    &__socials {
+      padding-top: 34px;
+      padding-left: 71px;
+      display: flex;
+      flex-direction: row;
+      gap: 188px;
+      &-text {
+        @include textDecoration(Montserrat, 600, 20px, 1px);
+        color: $mainTextColor;
+      }
+      &-img {
+        width: 190px;
+        height: 30px;
+        // padding-top: 16px;
+        // padding-bottom: 8px;
+      }
+      &-text2 {
+        @include textDecoration(Gilroy, 400, 18px, 24px);
+        color: $mainBannerSubtitleColor;
+      }
+      &-icon {
+        width: 35px;
+        height: 35px;
+      }
+
+      &-rating {
+        width: 215px;
+      }
+      &-nets {
+        width: 185px;
+      }
+      &-netsIcons {
+        padding-top: 5px;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+      }
+    }
+  }
 }
 </style>
