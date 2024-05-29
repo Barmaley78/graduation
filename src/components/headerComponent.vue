@@ -2,7 +2,7 @@
     <header class="header center">
         <img src="../assets/images/Logo.svg" alt="company logo" class="header__logo">
         <div class="header__categories">
-            <span class="header__categories-item">Наши услуги</span>
+            <span class="header__categories-item" id="checked">Наши услуги</span>
             <span class="header__categories-item">О компании</span>
             <span class="header__categories-item">Отзывы</span>
             <span class="header__categories-item">Выполненные заказы</span>
@@ -57,9 +57,21 @@ export default {
                 url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
                 url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.woff') format('woff'),
                 url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.ttf') format('truetype');
-            font-weight: 600;
-            font-style: normal;
+            // font-weight: 600;
+            // font-style: normal;
     }
+
+    @font-face {
+    font-family: 'Bebas Neue';
+    src: url('~@/assets/fonts/BebasNeue/BebasNeueRegular.eot');
+    src: local('Bebas Neue Regular'), local('BebasNeueRegular'),
+        url('~@/assets/fonts/BebasNeue/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+        url('~@/assets/fonts/BebasNeue/BebasNeueRegular.woff2') format('woff2'),
+        url('~@/assets/fonts/BebasNeue/BebasNeueRegular.woff') format('woff'),
+        url('~@/assets/fonts/BebasNeue/BebasNeueRegular.ttf') format('truetype');
+    // font-weight: normal;
+    // font-style: normal;
+  }
 
     .center {
         padding-left: calc(50% - $widthSiteDesctop / 2);
@@ -74,13 +86,21 @@ export default {
         display: flex;
         align-items: center;
         &__categories {
-        @include textDecoration(Gilroy, 600, 16px, 19px, calc(1em * -0.01));
-        color: $mainTextColor;
-        padding-left: 78px;
-        padding-right: 291px;
-        display: flex;
-        flex-direction: row;
-        gap: 24px;
+            padding-left: 78px;
+            padding-right: 291px;
+            display: flex;
+            flex-direction: row;
+            gap: 24px;
+            &-item {
+                @include textDecoration(Gilroy, 600, 16px, 19px, calc(1em * -0.01));
+                color: $mainTextColor;
+                padding-bottom: 24px;
+                padding-top: 24px;
+            }
+            &-item#checked {
+                color: $buttonColor;
+                border-bottom: 2px solid $buttonColor;
+            }
         }
         &__adress {      
         width: 330px;
@@ -111,36 +131,5 @@ export default {
             @include textDecoration(Gilroy, 600, 20px, 24px, calc(1em * -0.01));
         }
         }
-    }
-
-    #circle1 {
-        position: absolute;
-        border-radius: 50%;
-        width: 1056px;
-        height: 1056px;
-        left: 724.16px;
-        top: 0px;
-        filter: blur(200px);
-        background: radial-gradient(50.00% 50.00% at 50% 50%,rgb(255, 107, 0),rgba(255, 107, 0, 0) 100%);
-        opacity: 0.2;
-    }
-    #circle2 {
-        position: absolute;
-        width: 182px;
-        height: 182px;
-        border-radius: 50%;
-        left: 177px;
-        top: 234px;
-        background: conic-gradient(from 180deg at 50% 50%, rgb(238, 243, 248), rgba(238, 243, 248, 0));
-    }
-    #circle3 {
-        position: absolute;
-        width: 1118px;
-        height: 1118px;
-        border-radius: 50%;
-        left: 597px;
-        top: 0px;
-        background: conic-gradient(from 180deg at 50% 50%, rgb(238, 243, 248), rgba(238, 243, 248, 0));
-        opacity: 0.6;
     }
 </style>

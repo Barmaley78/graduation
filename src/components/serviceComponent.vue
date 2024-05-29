@@ -1,5 +1,5 @@
 <template>
-        <section class="service center">
+    <section class="service center">
       <div class="span-col">
         <div class="service-circle"></div>
         <div class="service__title">Мы работаем <br> с устройствами:</div>
@@ -103,9 +103,21 @@ export default {
                 url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
                 url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.woff') format('woff'),
                 url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.ttf') format('truetype');
-            font-weight: 600;
-            font-style: normal;
+            // font-weight: 600;
+            // font-style: normal;
     }
+
+    @font-face {
+    font-family: 'Bebas Neue';
+    src: url('~@/assets/fonts/BebasNeue/BebasNeueRegular.eot');
+    src: local('Bebas Neue Regular'), local('BebasNeueRegular'),
+        url('~@/assets/fonts/BebasNeue/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+        url('~@/assets/fonts/BebasNeue/BebasNeueRegular.woff2') format('woff2'),
+        url('~@/assets/fonts/BebasNeue/BebasNeueRegular.woff') format('woff'),
+        url('~@/assets/fonts/BebasNeue/BebasNeueRegular.ttf') format('truetype');
+    // font-weight: normal;
+    // font-style: normal;
+  }
 
     .center {
         padding-left: calc(50% - $widthSiteDesctop / 2);
@@ -126,7 +138,7 @@ export default {
             position: absolute;
             text-transform: uppercase;
             top: 106px;
-            @include textDecoration("Bebas Neue", 700, 80px, 84px, calc(1em * -0.25));
+            @include textDecoration("Bebas Neue", 700, 80px, 84px);
             color: $mainTextColor;
         }
         &__item {      

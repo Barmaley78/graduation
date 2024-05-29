@@ -1,8 +1,10 @@
 <template>
        <section class="about center">
-      <img src="../assets/images/wave-blue.svg" alt="wave image" class="about__vector1">
-      <img src="../assets/images/grey-arrows.svg" alt="wave image" class="about__vector2">
-      <img src="../assets/images/ellipse.svg" alt="wave image" class="about__vector3">
+        <div class="about__block">
+            <img src="../assets/images/wave-blue.svg" alt="wave image" class="about__vector1">
+            <img src="../assets/images/grey-arrows.svg" alt="arrows image" class="about__vector2">
+            <img src="../assets/images/ellipse.svg" alt="ellipse image" class="about__vector3">
+        </div>
       <div class="about__header">
         <img src="../assets/images/quotation.svg" alt="" class="about__header-el1">
         <div class="about__header-el2">
@@ -28,29 +30,43 @@
           </p>
         </div>
         <div class="about__content-right">
-          <div class="about__content-buttons">
-            <img src="../assets/images/master3.jpg" alt="about master image" class="about__content-img">
+            <div class="about__content-image">
+                <img src="../assets/images/master3.jpg" alt="about master image" class="about__content-img">
+                <div class="about__content-buttons">
+                    <div class="about__content-backward">
+                        <div class="about__content-circle1">
+                            <div class="about__content-circle2">
+                                <img src="../assets/images/chevron-left.svg" alt="" class="about__content-arrow">
+                            </div>                    
+                        </div>                    
+                    </div>
+                    <div class="about__content-forward">
+                        <div class="about__content-circle1">
+                            <div class="about__content-circle2">
+                                <img src="../assets/images/chevron-right.svg" alt="" class="about__content-arrow">
+                            </div>                    
+                        </div>                    
+                    </div>
+                </div>
+            </div> 
 
-            <div class="about__content-backward">
-              <div class="about__content-circle1"></div>
-              <div class="about__content-circle2"></div>
-              <img src="../assets/images/chevron-left.svg" alt="" class="about__content-arrow">
+            <div class="carousel__nav">
+                <div class="carousel__nav-item">
+                    <div class="carousel__nav-itemMark" id="checked"></div>
+                </div> 
+                <div class="carousel__nav-item">
+                    <div class="carousel__nav-itemMark"></div>
+                </div> 
+                <div class="carousel__nav-item">
+                    <div class="carousel__nav-itemMark"></div>
+                </div> 
+                <div class="carousel__nav-item">
+                    <div class="carousel__nav-itemMark"></div>
+                </div> 
+                <div class="carousel__nav-item">
+                    <div class="carousel__nav-itemMark"></div>
+                </div> 
             </div>
-
-            <div class="about__content-forward">
-              <div class="about__content-circle1"></div>
-              <div class="about__content-circle2"></div>
-              <img src="../assets/images/chevron-right.svg" alt="" class="about__content-arrow">
-            </div>
-          </div>  
-
-          <div class="carousel__nav">
-            <div class="carousel__nav-item" id="checked"></div> 
-            <div class="carousel__nav-item"></div> 
-            <div class="carousel__nav-item"></div> 
-            <div class="carousel__nav-item"></div> 
-            <div class="carousel__nav-item"></div> 
-          </div>
         </div>
       </div>
 
@@ -91,8 +107,20 @@ export default {
                 url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
                 url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.woff') format('woff'),
                 url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.ttf') format('truetype');
-            font-weight: 600;
-            font-style: normal;
+            // font-weight: 600;
+            // font-style: normal;
+    }
+
+    @font-face {
+            font-family: 'Bebas Neue';
+            src: url('~@/assets/fonts/BebasNeue/BebasNeueRegular.eot');
+            src: local('Bebas Neue Regular'), local('BebasNeueRegular'),
+                url('~@/assets/fonts/BebasNeue/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+                url('~@/assets/fonts/BebasNeue/BebasNeueRegular.woff2') format('woff2'),
+                url('~@/assets/fonts/BebasNeue/BebasNeueRegular.woff') format('woff'),
+                url('~@/assets/fonts/BebasNeue/BebasNeueRegular.ttf') format('truetype');
+            // font-weight: normal;
+            // font-style: normal;
     }
 
     .center {
@@ -119,26 +147,37 @@ export default {
             gap: 16px;
         }
         &__nav {
+            position: relative;
+            margin: 0 auto;
             width: 112px;
             height: 16px;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            column-gap: 8px;
+            display: flex;
+            
+            gap: 8px;
             &-item {
+                width: 16px;
+                height: 16px;
+            }
+            &-itemMark{
+                position: relative;
+                left: 6px;
+                top: 6px;
                 width: 4px;
                 height: 4px;
                 background: $mainTextColor;
                 box-sizing: border-box;
-                padding: 6px;
                 border-radius: 50%;
                 opacity: 0.5;
             }
-            &-item#checked {
-                width: 8px;
-                height: 8px;
+            &-itemMark#checked {
+                position: relative;
+                left: 3px;
+                top: 3px;
+                width: 10px;
+                height: 10px;
                 background: $commonBgColor;
                 box-sizing: border-box;
-                border: 4px solid $buttonColor;
+                border: 1px solid $buttonColor;
                 border-radius: 50%;
                 opacity: 1;
             }
@@ -148,8 +187,12 @@ export default {
     .about {
         margin: 0 auto;
         padding-bottom: 84px;
-        width: $widthMainBlockDesctop;
-        position: relative;
+        width: $widthMainBlockDesctop;        
+        &__block {
+            position: relative;
+            width: $widthMainBlockDesctop;
+            margin: 0 auto;
+        }
         &__vector1 {
             position: absolute;
             left: -94px;
@@ -196,20 +239,29 @@ export default {
                 color: $aboutTextColor;
             }
             &-right {
-                width: 635px;
+                position: relative;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 gap: 20px;
             }
+            &-image {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;             
+            }
             &-img {
                 border-radius: 20px;
             }
             &-buttons {
-                width: 715px;
+                position: absolute;
+                width: 635px;
                 display: flex;
+                justify-content: space-between;
+                flex-direction: row;
             }
             &-backward {
+                position: relative;
                 display: flex;
                 align-content: center;
                 justify-content: center;
@@ -217,6 +269,7 @@ export default {
                 flex-direction: row;
             }
             &-forward {
+                position: relative;
                 display: flex;
                 align-content: center;
                 justify-content: center;
@@ -224,17 +277,25 @@ export default {
                 flex-direction: row;
             }
             &-circle1 {
+                position: absolute;
                 width: 80px;
                 height: 80px;
-                background: rgb(250, 252, 254);
+                background-color: rgb(250, 252, 254, 0.5);
                 border-radius: 50%;
             }
             &-circle2 {
+                position: absolute;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                left: 16px;
+                top: 16px;
                 width: 48px;
                 height: 48px;
                 border-radius: 50%;
                 box-shadow: 0px 8px 16px 0px rgba(255, 107, 0, 0.16);
-                background: rgb(255, 255, 255);
+                background-color: rgb(255, 255, 255, 1);
             }
             &-arrow {
                 width: 24px;

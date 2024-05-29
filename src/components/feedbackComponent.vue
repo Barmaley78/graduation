@@ -1,7 +1,10 @@
 <template>
-        <section class="feedback center">
-      <img src="../assets/images/ellipse.svg" alt="ellipse image" class="feedback__vector1">
-      <img src="../assets/images/dots.svg" alt="dots image" class="feedback__vector2">
+    <section class="feedback center">
+      <div class="feedback__block">
+        <img src="../assets/images/ellipse.svg" alt="ellipse image" class="feedback__vector1">
+        <img src="../assets/images/dots.svg" alt="dots image" class="feedback__vector2">
+      </div>
+      
       <div class="feedback__header">
         <div class="feedback__title">Отзывы счастливых клиентов</div>
         <div class="carousel__buttons">
@@ -18,43 +21,61 @@
         <div class="feedback__content-item">
           <img src="../assets/images/feedback_1.jpg" alt="feedback snap image" class="feedback__img">
           <div class="feedback__btn">
-            <div class="feedback__btn-circle1"></div>
-            <div class="feedback__btn-circle2"></div>
-            <img src="../assets/images/play.svg" alt="play image" class="feedback__btn-play">
-          </div>
+            <div class="feedback__btn-circle1">
+              <div class="feedback__btn-circle2">
+                <img src="../assets/images/play.svg" alt="play image" class="feedback__btn-play">
+              </div>            
+            </div>
+          </div>            
         </div>
         <div class="feedback__content-item">
           <img src="../assets/images/feedback_2.jpg" alt="feedback snap image" class="feedback__img">
           <div class="feedback__btn">
-            <div class="feedback__btn-circle1"></div>
-            <div class="feedback__btn-circle2"></div>
-            <img src="../assets/images/play.svg" alt="play image" class="feedback__btn-play">
+            <div class="feedback__btn-circle1">
+              <div class="feedback__btn-circle2">
+                <img src="../assets/images/play.svg" alt="play image" class="feedback__btn-play">
+              </div> 
+            </div>           
           </div>
         </div>
         <div class="feedback__content-item">
           <img src="../assets/images/feedback_3.jpg" alt="feedback snap image" class="feedback__img">
           <div class="feedback__btn">
-            <div class="feedback__btn-circle1"></div>
-            <div class="feedback__btn-circle2"></div>
-            <img src="../assets/images/play.svg" alt="play image" class="feedback__btn-play">
+            <div class="feedback__btn-circle1">
+              <div class="feedback__btn-circle2">
+                <img src="../assets/images/play.svg" alt="play image" class="feedback__btn-play">
+              </div>
+            </div>
           </div>
         </div>
         <div class="feedback__content-item">
           <img src="../assets/images/feedback_4.jpg" alt="feedback snap image" class="feedback__img">
           <div class="feedback__btn">
-            <div class="feedback__btn-circle1"></div>
-            <div class="feedback__btn-circle2"></div>
-            <img src="../assets/images/play.svg" alt="play image" class="feedback__btn-play">
+            <div class="feedback__btn-circle1">
+              <div class="feedback__btn-circle2">
+                <img src="../assets/images/play.svg" alt="play image" class="feedback__btn-play">
+              </div>            
+            </div>            
           </div>
         </div>
       </div>
 
       <div class="carousel__nav">
-        <div class="carousel__nav-item" id="checked"></div> 
-        <div class="carousel__nav-item"></div> 
-        <div class="carousel__nav-item"></div> 
-        <div class="carousel__nav-item"></div> 
-        <div class="carousel__nav-item"></div> 
+        <div class="carousel__nav-item">
+          <div class="carousel__nav-itemMark" id="checked"></div>
+        </div> 
+        <div class="carousel__nav-item">
+          <div class="carousel__nav-itemMark"></div>
+        </div> 
+        <div class="carousel__nav-item">
+          <div class="carousel__nav-itemMark"></div>
+        </div> 
+        <div class="carousel__nav-item">
+          <div class="carousel__nav-itemMark"></div>
+        </div> 
+        <div class="carousel__nav-item">
+          <div class="carousel__nav-itemMark"></div>
+        </div> 
       </div>
 
     </section>
@@ -62,7 +83,7 @@
 
 <script>
 export default {
-  name: 'Component'
+  name: 'feedbackComponent'
 }
 </script>
 
@@ -93,8 +114,20 @@ export default {
                 url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
                 url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.woff') format('woff'),
                 url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.ttf') format('truetype');
-            font-weight: 600;
-            font-style: normal;
+            // font-weight: 600;
+            // font-style: normal;
+    }
+
+    @font-face {
+            font-family: 'Bebas Neue';
+            src: url('~@/assets/fonts/BebasNeue/BebasNeueRegular.eot');
+            src: local('Bebas Neue Regular'), local('BebasNeueRegular'),
+                url('~@/assets/fonts/BebasNeue/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+                url('~@/assets/fonts/BebasNeue/BebasNeueRegular.woff2') format('woff2'),
+                url('~@/assets/fonts/BebasNeue/BebasNeueRegular.woff') format('woff'),
+                url('~@/assets/fonts/BebasNeue/BebasNeueRegular.ttf') format('truetype');
+            // font-weight: normal;
+            // font-style: normal;
     }
 
     .center {
@@ -121,26 +154,37 @@ export default {
             gap: 16px;
         }
         &__nav {
+            position: relative;
+            margin: 0 auto;
             width: 112px;
             height: 16px;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            column-gap: 8px;
+            display: flex;
+            
+            gap: 8px;
             &-item {
+                width: 16px;
+                height: 16px;
+            }
+            &-itemMark{
+                position: relative;
+                left: 6px;
+                top: 6px;
                 width: 4px;
                 height: 4px;
                 background: $mainTextColor;
                 box-sizing: border-box;
-                padding: 6px;
                 border-radius: 50%;
                 opacity: 0.5;
             }
-            &-item#checked {
-                width: 8px;
-                height: 8px;
+            &-itemMark#checked {
+                position: relative;
+                left: 3px;
+                top: 3px;
+                width: 10px;
+                height: 10px;
                 background: $commonBgColor;
                 box-sizing: border-box;
-                border: 4px solid $buttonColor;
+                border: 1px solid $buttonColor;
                 border-radius: 50%;
                 opacity: 1;
             }
@@ -148,76 +192,85 @@ export default {
     }
 
     .feedback {
-            margin: 0 auto;
-            padding-top: 120px;
-            padding-bottom: 120px;
-            width: $widthMainBlockDesctop;
-            height: 420px;
-            position: relative;
+        margin: 0 auto;
+        padding-top: 120px;
+        padding-bottom: 120px;
+        width: $widthMainBlockDesctop;
+        height: 420px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        &__block {
+          position: relative;
+        }
+        &__header {
             display: flex;
-            flex-direction: column;
-            gap: 48px;
-            &__header {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-            }
-            &__title {
-                text-transform: uppercase;
-                @include textDecoration("Babes Neue", 700, 56px, 56x, calc(1em * -0.35));
-                color: $mainTextColor;
-            }
-            &__content{
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-                column-gap: 30px;
-                // place-items: center;
-                &-item {
-                    width: 302px;
-                    height: 250px;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-                }
-            }
-            &__btn {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &__title {
+            text-transform: uppercase;
+            @include textDecoration("Bebas Neue", 700, 56px, 56x);
+            color: $mainTextColor;
+        }
+        &__content{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 30px;
+            &-item {
+                position: relative;
+                width: 302px;
+                height: 250px;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                &-circle1 {
-                    width: 72px;
-                    height: 72px;
-                    box-shadow: 0px 10px 10px 0px rgba(255, 107, 0, 0.05),0px 20px 40px 0px rgba(255, 107, 0, 0.13);
-                    background: rgb(255, 255, 255);
-                    border-radius: 50%;
-                    opacity: 0.5;
-                }
-                &-circle2 {
-                    width: 56px;
-                    height: 56px;
-                    box-shadow: 0px 10px 10px 0px rgba(255, 107, 0, 0.05),0px 20px 40px 0px rgba(255, 107, 0, 0.13);
-                    background: rgb(255, 255, 255);
-                    border-radius: 50%;
-                }
-                &-play {
-                    width: 10.5px;
-                    height: 13.5px;
-                }
             }
-            &__img {
-                border-radius: 15px;
+        }
+        &__btn {
+            position: absolute;
+            left: 108px;
+            top: 77px;
+            &-circle1 {
+                position: relative;
+                width: 72px;
+                height: 72px;
+                box-shadow: 0px 10px 10px 0px rgba(255, 107, 0, 0.05),0px 20px 40px 0px rgba(255, 107, 0, 0.13);
+                background-color: rgb(255, 255, 255, 0.5);
+                border-radius: 50%;
             }
-            &__vector1 {
-                position: absolute;
-                left: -211px;
-                top: 287px;
+            &-circle2 {
+              position: absolute;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                left: 8px;
+                top: 8px;
+                width: 56px;
+                height: 56px;
+                box-shadow: 0px 10px 10px 0px rgba(255, 107, 0, 0.05),0px 20px 40px 0px rgba(255, 107, 0, 0.13);
+                background-color: rgb(255, 255, 255, 1);
+                border-radius: 50%;
             }
-            &__vector2 {
-                position: absolute;
-                left: 1488px;
-                top: 258px;
+            &-play {
+                width: 10.5px;
+                height: 13.5px;
             }
+        }
+        &__img {
+            border-radius: 15px;
+        }
+        &__vector1 {
+            position: absolute;
+            left: -211px;
+            top: 287px;
+        }
+        &__vector2 {
+            position: absolute;
+            left: 1488px;
+            top: 258px;
+        }
     }
 </style>

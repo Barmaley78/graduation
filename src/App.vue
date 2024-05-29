@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <!-- <headerComponent />
+    <headerComponent />
     <mainBannerComponent />
     <serviceComponent />
     <abounCompanyComponent />
@@ -9,38 +9,38 @@
     <arronServiceComponent />
     <giftsComponent />
     <aboutComponent />
-    <lidComponent /> -->
+    <lidComponent />
     <footerComponent />
   </div>
 </template>
 
 <script>
 
-// import headerComponent from './components/headerComponent.vue'
-// import mainBannerComponent from './components/mainBannerComponent.vue'
-// import serviceComponent from './components/serviceComponent.vue'
-// import abounCompanyComponent from './components/abounCompanyComponent.vue'
-// import feedbackComponent from './components/feedbackComponent.vue'
-// import complOrdersComponent from './components/complOrdersComponent.vue'
-// import arronServiceComponent from './components/arronServiceComponent.vue'
-// import giftsComponent from './components/giftsComponent.vue'
-// import aboutComponent from './components/aboutComponent.vue'
-// import lidComponent from './components/lidComponent.vue'
+import headerComponent from './components/headerComponent.vue'
+import mainBannerComponent from './components/mainBannerComponent.vue'
+import serviceComponent from './components/serviceComponent.vue'
+import abounCompanyComponent from './components/abounCompanyComponent.vue'
+import feedbackComponent from './components/feedbackComponent.vue'
+import complOrdersComponent from './components/complOrdersComponent.vue'
+import arronServiceComponent from './components/arronServiceComponent.vue'
+import giftsComponent from './components/giftsComponent.vue'
+import aboutComponent from './components/aboutComponent.vue'
+import lidComponent from './components/lidComponent.vue'
 import footerComponent from './components/footerComponent.vue'
 
   export default {
     name: 'App',
     components: {
-      // headerComponent,
-      // mainBannerComponent,
-      // serviceComponent,
-      // abounCompanyComponent,
-      // feedbackComponent,
-      // complOrdersComponent,
-      // arronServiceComponent,
-      // giftsComponent,
-      // aboutComponent,
-      // lidComponent,
+      headerComponent,
+      mainBannerComponent,
+      serviceComponent,
+      abounCompanyComponent,
+      feedbackComponent,
+      complOrdersComponent,
+      arronServiceComponent,
+      giftsComponent,
+      aboutComponent,
+      lidComponent,
       footerComponent
     }
   }
@@ -74,8 +74,20 @@ import footerComponent from './components/footerComponent.vue'
               url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
               url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.woff') format('woff'),
               url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.ttf') format('truetype');
-        font-weight: 600;
-        font-style: normal;
+        // font-weight: 600;
+        // font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Bebas Neue';
+    src: url('~@/assets/fonts/BebasNeue/BebasNeueRegular.eot');
+    src: local('Bebas Neue Regular'), local('BebasNeueRegular'),
+        url('~@/assets/fonts/BebasNeue/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+        url('~@/assets/fonts/BebasNeue/BebasNeueRegular.woff2') format('woff2'),
+        url('~@/assets/fonts/BebasNeue/BebasNeueRegular.woff') format('woff'),
+        url('~@/assets/fonts/BebasNeue/BebasNeueRegular.ttf') format('truetype');
+    // font-weight: normal;
+    // font-style: normal;
   }
   
   .center {

@@ -1,10 +1,9 @@
 <template>
-        <section class="gifts center">
-      <div class="gifts__circle"></div>
+    <section class="gifts center">
       <div class="gifts__content">        
-        <div class="gifts__title">На каждый ремонт гарантировано подарок на ваш выбор :</div>
         <div class="gifts__header">
-          <div></div>
+          <div class="gifts__circle"></div>
+          <div class="gifts__title">На каждый ремонт гарантировано подарок на ваш выбор :</div>
           <div class="carousel__buttons">
             <div class="buttonCircle">
               <img src="../assets/images/chevron-left.svg" alt="left button arrow" class="buttonCircle-left">
@@ -14,7 +13,6 @@
             </div>
           </div>
         </div>
-
         <div class="gifts__cards">
           <div class="gifts__cards-item">
             <div class="gifts__cards-rect"></div>
@@ -72,16 +70,24 @@
             <p class="gifts__cards-name">Другие аксесуары</p>
           </div>
         </div>
-
         <div class="carousel__nav">
-          <div class="carousel__nav-item" id="checked"></div> 
-          <div class="carousel__nav-item"></div> 
-          <div class="carousel__nav-item"></div> 
-          <div class="carousel__nav-item"></div> 
-          <div class="carousel__nav-item"></div> 
+        <div class="carousel__nav-item">
+          <div class="carousel__nav-itemMark" id="checked"></div>
+        </div> 
+        <div class="carousel__nav-item">
+          <div class="carousel__nav-itemMark"></div>
+        </div> 
+        <div class="carousel__nav-item">
+          <div class="carousel__nav-itemMark"></div>
+        </div> 
+        <div class="carousel__nav-item">
+          <div class="carousel__nav-itemMark"></div>
+        </div> 
+        <div class="carousel__nav-item">
+          <div class="carousel__nav-itemMark"></div>
+        </div> 
         </div>
-      </div>
-
+    </div>
     </section>
 </template>
 
@@ -118,9 +124,21 @@ export default {
                 url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
                 url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.woff') format('woff'),
                 url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.ttf') format('truetype');
-            font-weight: 600;
-            font-style: normal;
+            // font-weight: 600;
+            // font-style: normal;
     }
+
+    @font-face {
+    font-family: 'Bebas Neue';
+    src: url('~@/assets/fonts/BebasNeue/BebasNeueRegular.eot');
+    src: local('Bebas Neue Regular'), local('BebasNeueRegular'),
+        url('~@/assets/fonts/BebasNeue/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+        url('~@/assets/fonts/BebasNeue/BebasNeueRegular.woff2') format('woff2'),
+        url('~@/assets/fonts/BebasNeue/BebasNeueRegular.woff') format('woff'),
+        url('~@/assets/fonts/BebasNeue/BebasNeueRegular.ttf') format('truetype');
+    // font-weight: normal;
+    // font-style: normal;
+  }
 
     .center {
         padding-left: calc(50% - $widthSiteDesctop / 2);
@@ -141,46 +159,57 @@ export default {
 
     .carousel {
         &__buttons {
-                display: flex;
-                flex-direction: row;
-                gap: 16px;
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
         }
         &__nav {
+            position: relative;
+            margin: 0 auto;
             width: 112px;
             height: 16px;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            column-gap: 8px;
+            display: flex;
+            
+            gap: 8px;
             &-item {
+                width: 16px;
+                height: 16px;
+            }
+            &-itemMark{
+                position: relative;
+                left: 6px;
+                top: 6px;
                 width: 4px;
                 height: 4px;
                 background: $mainTextColor;
                 box-sizing: border-box;
-                padding: 6px;
                 border-radius: 50%;
                 opacity: 0.5;
             }
-            &-item#checked {
-                width: 8px;
-                height: 8px;
+            &-itemMark#checked {
+                position: relative;
+                left: 3px;
+                top: 3px;
+                width: 10px;
+                height: 10px;
                 background: $commonBgColor;
                 box-sizing: border-box;
-                border: 4px solid $buttonColor;
+                border: 1px solid $buttonColor;
                 border-radius: 50%;
                 opacity: 1;
             }
         }
     }
     .gifts {
-        position: relative;
         margin: 0 auto;
         background: linear-gradient(180.00deg, rgb(235, 243, 248),rgba(235, 243, 248, 0) 100%);
         padding-bottom: 145px;
         &__circle {
+            z-index: -1;
             position: absolute;
             width: 182px;
             height: 182px;
-            left: 631px;
+            left: 321px;
             top: 150px;
             transform: rotate(30.00deg);
             background: conic-gradient(from 180deg at 50% 50%, rgb(238, 243, 248), rgba(238, 243, 248, 0));
@@ -193,16 +222,18 @@ export default {
         }
         &__title {
             padding-top: 133px;
-            padding-right: 334px;
+            padding-right: 200px;
             padding-bottom: 63px;
             text-transform: uppercase;
-            @include textDecoration("Babes Neue", 700, 80px, 84px, calc(1em * -0.35));
+            @include textDecoration("Bebas Neue", 700, 80px, 84px);
         color: $mainTextColor;
         }
         &__header {
+            position: relative;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            align-items: flex-end;
         }
         &__cards {
             display: grid;

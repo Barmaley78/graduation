@@ -1,8 +1,10 @@
 <template>
-        <section class="arronService center">
-      <div class="arronService__vector"></div>
-      <img src="../assets/images/ellipse.svg" alt="check list icon" class="arronService__vector1">
-      <img src="../assets/images/dots.svg" alt="check list icon" class="arronService__vector2">
+    <section class="arronService center">
+      <div class="arronService__block">
+        <div class="arronService__vector"></div>
+        <img src="../assets/images/ellipse.svg" alt="check list icon" class="arronService__vector1">
+        <img src="../assets/images/dots.svg" alt="check list icon" class="arronService__vector2">
+      </div>
       <div class="arronService__content">
         <div class="arronService__left">
           <p class="arronService__title">что делать если ноутбук или телефон медленно работает</p>
@@ -72,8 +74,20 @@ export default {
                 url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
                 url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.woff') format('woff'),
                 url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.ttf') format('truetype');
-            font-weight: 600;
-            font-style: normal;
+            // font-weight: 600;
+            // font-style: normal;
+    }
+
+    @font-face {
+            font-family: 'Bebas Neue';
+            src: url('~@/assets/fonts/BebasNeue/BebasNeueRegular.eot');
+            src: local('Bebas Neue Regular'), local('BebasNeueRegular'),
+                url('~@/assets/fonts/BebasNeue/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+                url('~@/assets/fonts/BebasNeue/BebasNeueRegular.woff2') format('woff2'),
+                url('~@/assets/fonts/BebasNeue/BebasNeueRegular.woff') format('woff'),
+                url('~@/assets/fonts/BebasNeue/BebasNeueRegular.ttf') format('truetype');
+            // font-weight: normal;
+            // font-style: normal;
     }
 
     .center {
@@ -88,6 +102,31 @@ export default {
         margin-top: -65px;
         padding-top: 160px;
         padding-bottom: 64px;
+        &__block {
+          position: relative;
+          width: $widthMainBlockDesctop;
+          margin: 0 auto;
+        }
+        &__vector {
+          z-index: -1;
+            position: absolute;
+            width: 276px;
+            height: 276px;
+            left: 0px;
+            top: -65px;      
+            background: conic-gradient(from 180deg at 50% 50%, rgb(238, 243, 248), rgba(238, 243, 248, 0));
+            border-radius: 50%;
+        }
+        &__vector2 {
+            position: absolute;
+            left: 1294px;
+            top: 69px;
+        }
+        &__vector1 {
+            position: absolute;
+            left: 1426px;
+            top: 490px;
+        }
         &__content {
             padding-left: 126px;
             padding-right: 134px;
@@ -104,7 +143,7 @@ export default {
         &__title {
             text-transform: uppercase;
             margin: 0 0;
-            @include textDecoration("Babes Neue", 700, 48px, 48px, calc(1em * -0.3));
+            @include textDecoration("Bebas Neue", 700, 48px, 48px);
             color: $mainTextColor;
         }
         &__icon {
@@ -151,25 +190,6 @@ export default {
         &__list li::marker {
             color: $buttonColor;
             font-size: 24px;
-        }
-        &__vector {
-            position: absolute;
-            width: 276px;
-            height: 276px;
-            left: 0px;
-            top: 0px;      
-            background: conic-gradient(from 180deg at 50% 50%, rgb(238, 243, 248), rgba(238, 243, 248, 0));
-            border-radius: 50%;
-        }
-        &__vector2 {
-            position: absolute;
-            left: 1294px;
-            top: 69px;
-        }
-        &__vector1 {
-            position: absolute;
-            left: 1426px;
-            top: 490px;
         }
     }
 </style>

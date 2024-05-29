@@ -1,6 +1,7 @@
 <template>
     <section class="lid center">
-      <div class="lid__content">
+        <div class="lid__block">
+            <div class="lid__content">
           <div class="lid__left">
             <div class="lid__discount">
               <div class="lid__discount-rect">&nbsp;</div>
@@ -8,7 +9,7 @@
 
               <img src="../assets/images/fire.svg" class="lid__discount-image" alt="fire image">
             </div>
-            <p class="lid__left-title">Записаться на диагностику в <span class="lid__left-title" id="colored">удобное</span> вам время</p>
+            <p class="lid__left-title">Записаться на<br>диагностику<br>в <span class="lid__left-title" id="colored">удобное</span> вам время</p>
           </div>
 
           <div class="lid__right">
@@ -18,6 +19,8 @@
             <div class="lid__right-button">Записаться</div>
           </div>
       </div>
+        </div>
+
     </section>
 </template>
 
@@ -54,9 +57,21 @@ export default {
                 url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
                 url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.woff') format('woff'),
                 url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.ttf') format('truetype');
-            font-weight: 600;
-            font-style: normal;
+            // font-weight: 600;
+            // font-style: normal;
     }
+
+    @font-face {
+    font-family: 'Bebas Neue';
+    src: url('~@/assets/fonts/BebasNeue/BebasNeueRegular.eot');
+    src: local('Bebas Neue Regular'), local('BebasNeueRegular'),
+        url('~@/assets/fonts/BebasNeue/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+        url('~@/assets/fonts/BebasNeue/BebasNeueRegular.woff2') format('woff2'),
+        url('~@/assets/fonts/BebasNeue/BebasNeueRegular.woff') format('woff'),
+        url('~@/assets/fonts/BebasNeue/BebasNeueRegular.ttf') format('truetype');
+    // font-weight: normal;
+    // font-style: normal;
+  }
 
     .center {
         padding-left: calc(50% - $widthSiteDesctop / 2);
@@ -66,12 +81,16 @@ export default {
     .lid {
         margin: 0 auto;
         width: $widthMainBlockDesctop;
-        height: 326px;
         margin-top: 58px;
-        margin-bottom: 117px;
-        box-sizing: border-box;
-        border: 1px solid rgb(199, 209, 215);
-        border-radius: 30px;
+        margin-bottom: 117px;        
+        &__block {
+            margin: 0 auto;
+            width: $widthMainBlockDesctop;
+            height: 326px;
+            box-sizing: border-box;
+            border: 1px solid rgb(199, 209, 215);
+            border-radius: 30px;
+        }
         &__content {
             width: 1078px;
             margin: 0 auto;
@@ -85,7 +104,7 @@ export default {
             flex-direction: column;
             &-title {
                 text-transform: uppercase;
-                @include textDecoration('Bebas Neue', 700, 48px, 48px, calc(1em * -0.25));
+                @include textDecoration('Bebas Neue', 700, 48px, 48px);
                 color: $mainTextColor;
             }
             &-title#colored {
@@ -145,5 +164,10 @@ export default {
                 padding: 18px 30px 18px 30px;
             }
         }
+    }
+
+    .span-col {
+        position: relative;
+        grid-column: auto / span 2;
     }
 </style>

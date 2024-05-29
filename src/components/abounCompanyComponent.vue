@@ -1,5 +1,5 @@
 <template>
-        <section class="aboutCompany center">
+    <section class="aboutCompany center">
       <div class="aboutCompany__left">
         <img src="../assets/images/grey-arrows.svg" alt="grey arrows image" class="aboutCompany__vector">
         <div class="aboutCompany__title">О компании Arron</div>
@@ -68,8 +68,20 @@ export default {
                 url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
                 url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.woff') format('woff'),
                 url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.ttf') format('truetype');
-            font-weight: 600;
-            font-style: normal;
+            // font-weight: 600;
+            // font-style: normal;
+    }
+
+    @font-face {
+            font-family: 'Bebas Neue';
+            src: url('~@/assets/fonts/BebasNeue/BebasNeueRegular.eot');
+            src: local('Bebas Neue Regular'), local('BebasNeueRegular'),
+                url('~@/assets/fonts/BebasNeue/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+                url('~@/assets/fonts/BebasNeue/BebasNeueRegular.woff2') format('woff2'),
+                url('~@/assets/fonts/BebasNeue/BebasNeueRegular.woff') format('woff'),
+                url('~@/assets/fonts/BebasNeue/BebasNeueRegular.ttf') format('truetype');
+            // font-weight: normal;
+            // font-style: normal;
     }
 
     .center {
@@ -82,7 +94,6 @@ export default {
         flex-direction: row;
         gap: 110px;
         height: 545px;
-        // width: 1298px;
         margin: 0 auto;
         background: linear-gradient(180.00deg, rgb(235, 243, 248),rgba(235, 243, 248, 0) 100%);
         &__left {
@@ -96,7 +107,7 @@ export default {
         }
         &__title {
             text-transform: uppercase;
-            @include textDecoration("Babes Neue", 700, 80px, 80px, calc(1em * -0.35));
+            @include textDecoration('Bebas Neue', 700, 80px, 80px);
             color: $mainTextColor;
         }
         &__subtitle {

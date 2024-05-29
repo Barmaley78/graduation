@@ -1,9 +1,10 @@
 <template>
-       <section class="complOrders center">
-      <img src="../assets/images/wave.svg" alt="wawes image" class="complOrders__vector1">
-      <img src="../assets/images/grey-arrows.svg" alt="arrows image" class="complOrders__vector2">
-      <div class="complOrders__o">
-
+    <section class="complOrders center">
+      <div class="complOrders__block">
+        <img src="../assets/images/wave.svg" alt="wawes image" class="complOrders__vector1">
+        <img src="../assets/images/grey-arrows.svg" alt="arrows image" class="complOrders__vector2">
+      </div>
+      <div class="complOrders__cont">
         <div class="complOrders__header">
           <div class="complOrders__title">Выполненные заказы</div>
           <div class="carousel__buttons">
@@ -15,7 +16,6 @@
             </div>
           </div>
         </div>
-
         <div class="complOrders__content">
           <div class="complOrders__content-item">
             <img src="../assets/images/order1.jpg" alt="complOrders snap image" class="complOrders__img">
@@ -27,14 +27,23 @@
             <img src="../assets/images/order3.jpg" alt="complOrders snap image" class="complOrders__img">
           </div>
         </div>
-
         <div class="carousel__nav">
-          <div class="carousel__nav-item" id="checked"></div> 
-          <div class="carousel__nav-item"></div> 
-          <div class="carousel__nav-item"></div> 
-          <div class="carousel__nav-item"></div> 
-          <div class="carousel__nav-item"></div> 
-        </div>
+        <div class="carousel__nav-item">
+          <div class="carousel__nav-itemMark" id="checked"></div>
+        </div> 
+        <div class="carousel__nav-item">
+          <div class="carousel__nav-itemMark"></div>
+        </div> 
+        <div class="carousel__nav-item">
+          <div class="carousel__nav-itemMark"></div>
+        </div> 
+        <div class="carousel__nav-item">
+          <div class="carousel__nav-itemMark"></div>
+        </div> 
+        <div class="carousel__nav-item">
+          <div class="carousel__nav-itemMark"></div>
+        </div> 
+      </div>
 
     </div>
     </section> 
@@ -73,8 +82,20 @@ export default {
                 url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
                 url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.woff') format('woff'),
                 url('~@/assets/fonts/Gilroy/Gilroy-SemiBold.ttf') format('truetype');
-            font-weight: 600;
-            font-style: normal;
+            // font-weight: 600;
+            // font-style: normal;
+    }
+
+    @font-face {
+            font-family: 'Bebas Neue';
+            src: url('~@/assets/fonts/BebasNeue/BebasNeueRegular.eot');
+            src: local('Bebas Neue Regular'), local('BebasNeueRegular'),
+                url('~@/assets/fonts/BebasNeue/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+                url('~@/assets/fonts/BebasNeue/BebasNeueRegular.woff2') format('woff2'),
+                url('~@/assets/fonts/BebasNeue/BebasNeueRegular.woff') format('woff'),
+                url('~@/assets/fonts/BebasNeue/BebasNeueRegular.ttf') format('truetype');
+            // font-weight: normal;
+            // font-style: normal;
     }
 
     .center {
@@ -101,26 +122,37 @@ export default {
             gap: 16px;
         }
         &__nav {
+            position: relative;
+            margin: 0 auto;
             width: 112px;
             height: 16px;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            column-gap: 8px;
+            display: flex;
+            
+            gap: 8px;
             &-item {
+                width: 16px;
+                height: 16px;
+            }
+            &-itemMark{
+                position: relative;
+                left: 6px;
+                top: 6px;
                 width: 4px;
                 height: 4px;
                 background: $mainTextColor;
                 box-sizing: border-box;
-                padding: 6px;
                 border-radius: 50%;
                 opacity: 0.5;
             }
-            &-item#checked {
-                width: 8px;
-                height: 8px;
+            &-itemMark#checked {
+                position: relative;
+                left: 3px;
+                top: 3px;
+                width: 10px;
+                height: 10px;
                 background: $commonBgColor;
                 box-sizing: border-box;
-                border: 4px solid $buttonColor;
+                border: 1px solid $buttonColor;
                 border-radius: 50%;
                 opacity: 1;
             }
@@ -129,14 +161,30 @@ export default {
 
     .complOrders {
         background: linear-gradient(180.00deg, rgb(235, 243, 248),rgba(235, 243, 248, 0) 100%);
-        &__o {
-            // position: relative;
+        &__block {
+          width: $widthMainBlockDesctop;
+          margin: 0 auto;
+          position: relative;
+        }
+        &__vector1 {
+          z-index: -1;
+          position: absolute;
+          left: -68px;
+          top: 523px;
+        }
+        &__vector2 {
+          position: absolute;
+          left: 505px;
+          top: 98px;
+        }
+        &__cont {
+            padding-top: 81px;            
             width: $widthMainBlockDesctop;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-content: space-between;
             gap: 48px;
         }
         &__header {
@@ -146,7 +194,7 @@ export default {
         }
         &__title {
             text-transform: uppercase;
-            @include textDecoration("Babes Neue", 700, 56px, 56px, calc(1em * -0.35));
+            @include textDecoration("Bebas Neue", 700, 56px, 56px);
             color: $mainTextColor;
         }
         &__content{
